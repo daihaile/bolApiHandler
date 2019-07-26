@@ -1,0 +1,569 @@
+2019-07-25 17:51:09,899 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 17:51:10,249 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 17:51:10,251 [Success] Bearer token obtained
+2019-07-25 17:51:10,644 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 17:51:10,891 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 17:51:10,893 [Success] Bearer token obtained
+2019-07-25 17:51:11,358 127.0.0.1 - - [25/Jul/2019 17:51:11] "GET / HTTP/1.1" 200 -
+2019-07-25 17:51:12,483 127.0.0.1 - - [25/Jul/2019 17:51:12] "GET /singleOrder HTTP/1.1" 500 -
+2019-07-25 17:51:12,797 127.0.0.1 - - [25/Jul/2019 17:51:12] "GET /singleOrder?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-07-25 17:51:12,798 127.0.0.1 - - [25/Jul/2019 17:51:12] "GET /singleOrder?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-07-25 17:51:12,800 127.0.0.1 - - [25/Jul/2019 17:51:12] "GET /singleOrder?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-07-25 17:51:13,047 127.0.0.1 - - [25/Jul/2019 17:51:13] "GET /singleOrder?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-07-25 17:51:13,182 127.0.0.1 - - [25/Jul/2019 17:51:13] "GET /singleOrder?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-25 17:51:43,606  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-25 17:51:43,671  * Restarting with stat
+2019-07-25 17:51:44,575 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 17:51:44,845 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 17:51:44,850 [Success] Bearer token obtained
+2019-07-25 17:51:48,301 127.0.0.1 - - [25/Jul/2019 17:51:48] "GET /singleOrder HTTP/1.1" 500 -
+2019-07-25 17:51:48,530 127.0.0.1 - - [25/Jul/2019 17:51:48] "GET /singleOrder?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-07-25 17:51:48,617 127.0.0.1 - - [25/Jul/2019 17:51:48] "GET /singleOrder?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-07-25 17:51:48,618 127.0.0.1 - - [25/Jul/2019 17:51:48] "GET /singleOrder?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-07-25 17:51:48,686 127.0.0.1 - - [25/Jul/2019 17:51:48] "GET /singleOrder?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-25 17:51:49,028 127.0.0.1 - - [25/Jul/2019 17:51:49] "GET /singleOrder?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-07-25 17:51:49,279 127.0.0.1 - - [25/Jul/2019 17:51:49] "GET /singleOrder?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-25 17:52:07,019  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-25 17:52:07,089  * Restarting with stat
+2019-07-25 17:52:08,081 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 17:52:08,526 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 17:52:08,532 [Success] Bearer token obtained
+2019-07-25 17:52:54,908  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-07-25 17:52:54,966  * Restarting with stat
+2019-07-25 17:54:03,069 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 17:54:03,318 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 17:54:03,323 [Success] Bearer token obtained
+2019-07-25 17:54:03,778 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 17:54:04,017 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 17:54:04,023 [Success] Bearer token obtained
+2019-07-25 17:54:06,145 127.0.0.1 - - [25/Jul/2019 17:54:06] "GET / HTTP/1.1" 200 -
+2019-07-25 17:54:07,018 C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads\mijn_openstaande_bestellingen.xls
+2019-07-25 17:54:07,112 ERROR IN SINGLEORDER
+2019-07-25 17:54:07,113 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 17:54:07,354 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 17:54:07,361 [Success] Bearer token obtained
+2019-07-25 17:54:07,368 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-25 17:54:08,244 https://api.bol.com:443 "GET /retailer/orders//2444895940 HTTP/1.1" 404 None
+2019-07-25 17:54:08,326 Sending request 
+2019-07-25 17:54:08,329 127.0.0.1 - - [25/Jul/2019 17:54:08] "GET /singleOrder HTTP/1.1" 200 -
+2019-07-25 17:59:30,164 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 17:59:30,395 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 17:59:30,400 [Success] Bearer token obtained
+2019-07-25 17:59:30,404 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-25 17:59:30,812 https://api.bol.com:443 "GET /retailer/orders HTTP/1.1" 200 None
+2019-07-25 17:59:31,267 127.0.0.1 - - [25/Jul/2019 17:59:31] "POST /uploader HTTP/1.1" 200 -
+2019-07-25 18:00:35,436  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-25 18:00:35,517  * Restarting with stat
+2019-07-25 18:00:41,668 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:00:41,672 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:00:42,136 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:00:42,140 [Success] Bearer token obtained
+2019-07-25 18:00:42,165 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:00:42,167 [Success] Bearer token obtained
+2019-07-25 18:00:42,791 127.0.0.1 - - [25/Jul/2019 18:00:42] "POST /uploader HTTP/1.1" 500 -
+2019-07-25 18:00:43,010 127.0.0.1 - - [25/Jul/2019 18:00:43] "GET /uploader?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-07-25 18:00:43,167 127.0.0.1 - - [25/Jul/2019 18:00:43] "GET /uploader?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-07-25 18:00:43,215 127.0.0.1 - - [25/Jul/2019 18:00:43] "GET /uploader?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-07-25 18:00:43,279 127.0.0.1 - - [25/Jul/2019 18:00:43] "GET /uploader?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-25 18:00:43,602 127.0.0.1 - - [25/Jul/2019 18:00:43] "GET /uploader?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-07-25 18:00:43,835 127.0.0.1 - - [25/Jul/2019 18:00:43] "GET /uploader?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-25 18:00:54,382  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-25 18:00:54,449  * Restarting with stat
+2019-07-25 18:00:55,393 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:00:55,652 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:00:55,653 [Success] Bearer token obtained
+2019-07-25 18:01:00,261 127.0.0.1 - - [25/Jul/2019 18:01:00] "POST /uploader HTTP/1.1" 500 -
+2019-07-25 18:01:00,477 127.0.0.1 - - [25/Jul/2019 18:01:00] "GET /uploader?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-07-25 18:01:00,579 127.0.0.1 - - [25/Jul/2019 18:01:00] "GET /uploader?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-07-25 18:01:00,580 127.0.0.1 - - [25/Jul/2019 18:01:00] "GET /uploader?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-07-25 18:01:00,663 127.0.0.1 - - [25/Jul/2019 18:01:00] "GET /uploader?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-25 18:01:00,971 127.0.0.1 - - [25/Jul/2019 18:01:00] "GET /uploader?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-07-25 18:01:01,224 127.0.0.1 - - [25/Jul/2019 18:01:01] "GET /uploader?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-25 18:01:10,367  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-25 18:01:10,432  * Restarting with stat
+2019-07-25 18:01:11,443 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:01:12,057 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:01:12,060 [Success] Bearer token obtained
+2019-07-25 18:01:22,088  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-07-25 18:01:22,148  * Restarting with stat
+2019-07-25 18:01:23,074 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:01:23,336 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:01:23,374 [Success] Bearer token obtained
+2019-07-25 18:01:26,925 C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads\mijn_openstaande_bestellingen.xls
+2019-07-25 18:01:27,025 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:01:27,245 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:01:27,247 [Success] Bearer token obtained
+2019-07-25 18:01:27,248 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-25 18:01:27,556 https://api.bol.com:443 "GET /retailer/orders//2444895940 HTTP/1.1" 404 None
+2019-07-25 18:01:27,636 Sending request 
+2019-07-25 18:01:27,656 127.0.0.1 - - [25/Jul/2019 18:01:27] "GET /singleOrder HTTP/1.1" 200 -
+2019-07-25 18:01:28,470 C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads\mijn_openstaande_bestellingen.xls
+2019-07-25 18:01:28,562 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:01:28,808 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:01:28,813 [Success] Bearer token obtained
+2019-07-25 18:01:28,818 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-25 18:01:29,061 https://api.bol.com:443 "GET /retailer/orders//2444895940 HTTP/1.1" 404 None
+2019-07-25 18:01:29,140 Sending request 
+2019-07-25 18:01:29,143 127.0.0.1 - - [25/Jul/2019 18:01:29] "GET /singleOrder HTTP/1.1" 200 -
+2019-07-25 18:01:32,656 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:01:32,880 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:01:32,886 [Success] Bearer token obtained
+2019-07-25 18:01:32,892 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-25 18:01:33,210 https://api.bol.com:443 "GET /retailer/orders HTTP/1.1" 200 None
+2019-07-25 18:01:33,460 127.0.0.1 - - [25/Jul/2019 18:01:33] "POST /uploader HTTP/1.1" 200 -
+2019-07-25 18:02:35,601  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-25 18:09:15,782  * Restarting with stat
+2019-07-25 18:09:17,741 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:09:18,089 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:09:18,094 [Success] Bearer token obtained
+2019-07-25 18:09:18,110 127.0.0.1 - - [25/Jul/2019 18:09:18] "GET / HTTP/1.1" 200 -
+2019-07-25 18:09:27,410 C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads\mijn_openstaande_bestellingen.xls
+2019-07-25 18:09:27,504 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:09:28,565 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:09:28,570 [Success] Bearer token obtained
+2019-07-25 18:09:28,577 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-25 18:09:28,931 https://api.bol.com:443 "GET /retailer/orders//2444895940 HTTP/1.1" 404 None
+2019-07-25 18:09:29,008 Sending request 
+2019-07-25 18:09:29,011 127.0.0.1 - - [25/Jul/2019 18:09:29] "GET /singleOrder HTTP/1.1" 200 -
+2019-07-25 18:09:33,504 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:09:33,733 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:09:33,738 [Success] Bearer token obtained
+2019-07-25 18:09:33,745 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-25 18:09:34,063 https://api.bol.com:443 "GET /retailer/orders HTTP/1.1" 200 None
+2019-07-25 18:09:34,288 127.0.0.1 - - [25/Jul/2019 18:09:34] "POST /uploader HTTP/1.1" 200 -
+2019-07-25 18:10:02,384  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-07-25 18:10:02,451  * Restarting with stat
+2019-07-25 18:10:03,354 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-25 18:10:04,601 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-25 18:10:05,636 [Success] Bearer token obtained
+2019-07-26 09:07:32,619 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:07:56,495 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:08:30,540 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:08:31,235 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:08:31,248 [Success] Bearer token obtained
+2019-07-26 09:08:31,416  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-07-26 09:09:19,880 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:09:20,177 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:09:20,177 [Success] Bearer token obtained
+2019-07-26 09:09:20,318  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-07-26 09:10:08,344 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:10:08,625 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:10:08,625 [Success] Bearer token obtained
+2019-07-26 09:10:09,078 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:10:09,344 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:10:09,344 [Success] Bearer token obtained
+2019-07-26 09:10:21,744  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:10:21,808  * Restarting with stat
+2019-07-26 09:10:22,736 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:10:23,025 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:10:23,025 [Success] Bearer token obtained
+2019-07-26 09:10:40,675 127.0.0.1 - - [26/Jul/2019 09:10:40] "GET / HTTP/1.1" 200 -
+2019-07-26 09:10:40,919 127.0.0.1 - - [26/Jul/2019 09:10:40] "GET /favicon.ico HTTP/1.1" 404 -
+2019-07-26 09:10:54,597 C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads\mijn_openstaande_bestellingen.xls
+2019-07-26 09:10:54,733 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:10:54,988 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:10:54,993 [Success] Bearer token obtained
+2019-07-26 09:10:55,001 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:10:55,311 https://api.bol.com:443 "GET /retailer/orders/2444895940 HTTP/1.1" 404 None
+2019-07-26 09:10:55,385 Sending request 
+2019-07-26 09:10:55,397 127.0.0.1 - - [26/Jul/2019 09:10:55] "GET /singleOrder HTTP/1.1" 200 -
+2019-07-26 09:11:09,536 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:11:09,819 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:11:09,825 [Success] Bearer token obtained
+2019-07-26 09:11:09,832 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:11:10,167 https://api.bol.com:443 "GET /retailer/orders HTTP/1.1" 200 None
+2019-07-26 09:11:10,420 127.0.0.1 - - [26/Jul/2019 09:11:10] "POST /uploader HTTP/1.1" 200 -
+2019-07-26 09:11:54,239  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:11:54,301  * Restarting with stat
+2019-07-26 09:11:55,184 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:11:56,430 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:11:56,433 [Success] Bearer token obtained
+2019-07-26 09:11:57,685 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:11:57,915 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:11:57,921 [Success] Bearer token obtained
+2019-07-26 09:11:57,925 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:11:58,252 https://api.bol.com:443 "GET /retailer/orders HTTP/1.1" 200 None
+2019-07-26 09:11:58,488 127.0.0.1 - - [26/Jul/2019 09:11:58] "POST /uploader HTTP/1.1" 200 -
+2019-07-26 09:19:50,620  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:19:50,685  * Restarting with stat
+2019-07-26 09:19:52,975 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:19:53,307 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:19:53,307 [Success] Bearer token obtained
+2019-07-26 09:20:11,888 127.0.0.1 - - [26/Jul/2019 09:20:11] "GET / HTTP/1.1" 500 -
+2019-07-26 09:20:12,118 127.0.0.1 - - [26/Jul/2019 09:20:12] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-07-26 09:20:12,244 127.0.0.1 - - [26/Jul/2019 09:20:12] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-07-26 09:20:12,292 127.0.0.1 - - [26/Jul/2019 09:20:12] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-07-26 09:20:12,364 127.0.0.1 - - [26/Jul/2019 09:20:12] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:20:12,698 127.0.0.1 - - [26/Jul/2019 09:20:12] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-07-26 09:20:13,023 127.0.0.1 - - [26/Jul/2019 09:20:13] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:20:41,973 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:20:42,223 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:20:42,238 [Success] Bearer token obtained
+2019-07-26 09:20:42,707 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:20:42,952 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:20:42,957 [Success] Bearer token obtained
+2019-07-26 09:20:44,118 127.0.0.1 - - [26/Jul/2019 09:20:44] "GET / HTTP/1.1" 200 -
+2019-07-26 09:20:45,191 127.0.0.1 - - [26/Jul/2019 09:20:45] "GET / HTTP/1.1" 200 -
+2019-07-26 09:20:46,102 127.0.0.1 - - [26/Jul/2019 09:20:46] "GET / HTTP/1.1" 200 -
+2019-07-26 09:21:47,393  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:21:47,461  * Restarting with stat
+2019-07-26 09:21:48,394 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:21:48,622 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:21:48,622 [Success] Bearer token obtained
+2019-07-26 09:22:04,293  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:22:04,354  * Restarting with stat
+2019-07-26 09:22:05,241 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:22:05,491 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:22:05,507 [Success] Bearer token obtained
+2019-07-26 09:22:32,800  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:22:32,851  * Restarting with stat
+2019-07-26 09:22:33,756 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:22:34,010 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:22:34,044 [Success] Bearer token obtained
+2019-07-26 09:26:14,679  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:26:14,740  * Restarting with stat
+2019-07-26 09:26:15,685 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:26:16,044 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:26:16,050 [Success] Bearer token obtained
+2019-07-26 09:26:28,536  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:26:28,594  * Restarting with stat
+2019-07-26 09:26:29,521 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:26:29,820 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:26:29,823 [Success] Bearer token obtained
+2019-07-26 09:26:31,565  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:26:31,628  * Restarting with stat
+2019-07-26 09:26:32,608 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:26:32,838 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:26:32,844 [Success] Bearer token obtained
+2019-07-26 09:27:04,711 127.0.0.1 - - [26/Jul/2019 09:27:04] "GET / HTTP/1.1" 500 -
+2019-07-26 09:27:04,887 127.0.0.1 - - [26/Jul/2019 09:27:04] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-07-26 09:27:05,039 127.0.0.1 - - [26/Jul/2019 09:27:05] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-07-26 09:27:05,041 127.0.0.1 - - [26/Jul/2019 09:27:05] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-07-26 09:27:05,143 127.0.0.1 - - [26/Jul/2019 09:27:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:27:05,456 127.0.0.1 - - [26/Jul/2019 09:27:05] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-07-26 09:27:05,705 127.0.0.1 - - [26/Jul/2019 09:27:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:27:35,796 127.0.0.1 - - [26/Jul/2019 09:27:35] "GET / HTTP/1.1" 200 -
+2019-07-26 09:27:39,162 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:27:39,422 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:27:39,424 [Success] Bearer token obtained
+2019-07-26 09:27:39,887 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:27:40,154 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:27:40,160 [Success] Bearer token obtained
+2019-07-26 09:27:41,176 127.0.0.1 - - [26/Jul/2019 09:27:41] "GET / HTTP/1.1" 200 -
+2019-07-26 09:32:38,395 127.0.0.1 - - [26/Jul/2019 09:32:38] "GET / HTTP/1.1" 200 -
+2019-07-26 09:33:09,486  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:33:09,555  * Restarting with stat
+2019-07-26 09:33:10,522 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:33:10,858 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:33:10,862 [Success] Bearer token obtained
+2019-07-26 09:33:26,022 127.0.0.1 - - [26/Jul/2019 09:33:26] "GET / HTTP/1.1" 200 -
+2019-07-26 09:34:26,977  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:34:27,040  * Restarting with stat
+2019-07-26 09:34:28,009 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:34:28,302 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:34:28,307 [Success] Bearer token obtained
+2019-07-26 09:34:41,747  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:34:41,809  * Restarting with stat
+2019-07-26 09:34:42,781 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:34:43,050 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:34:43,051 [Success] Bearer token obtained
+2019-07-26 09:34:45,583 127.0.0.1 - - [26/Jul/2019 09:34:45] "GET / HTTP/1.1" 200 -
+2019-07-26 09:34:49,495 127.0.0.1 - - [26/Jul/2019 09:34:49] "GET / HTTP/1.1" 200 -
+2019-07-26 09:35:01,388 127.0.0.1 - - [26/Jul/2019 09:35:01] "GET /bol HTTP/1.1" 405 -
+2019-07-26 09:36:25,879  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:36:25,938  * Restarting with stat
+2019-07-26 09:36:26,911 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:36:27,264 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:36:27,264 [Success] Bearer token obtained
+2019-07-26 09:36:59,735  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:36:59,794  * Restarting with stat
+2019-07-26 09:37:00,673 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:37:00,949 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:37:00,951 [Success] Bearer token obtained
+2019-07-26 09:37:06,912  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:37:06,971  * Restarting with stat
+2019-07-26 09:37:07,825 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:37:08,109 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:37:08,109 [Success] Bearer token obtained
+2019-07-26 09:37:14,152  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:37:14,218  * Restarting with stat
+2019-07-26 09:37:15,111 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:37:15,389 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:37:15,389 [Success] Bearer token obtained
+2019-07-26 09:37:20,416  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:37:20,480  * Restarting with stat
+2019-07-26 09:37:21,389 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:37:21,703 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:37:21,709 [Success] Bearer token obtained
+2019-07-26 09:37:23,420  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:37:23,491  * Restarting with stat
+2019-07-26 09:37:24,436 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:37:24,669 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:37:24,671 [Success] Bearer token obtained
+2019-07-26 09:37:25,576 127.0.0.1 - - [26/Jul/2019 09:37:25] "GET / HTTP/1.1" 200 -
+2019-07-26 09:37:30,418 C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads\mijn_openstaande_bestellingen.xls
+2019-07-26 09:37:30,507 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:37:30,784 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:37:30,786 [Success] Bearer token obtained
+2019-07-26 09:37:30,787 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:37:31,127 https://api.bol.com:443 "GET /retailer/orders/2444895940 HTTP/1.1" 404 None
+2019-07-26 09:37:31,201 Sending request 
+2019-07-26 09:37:31,203 127.0.0.1 - - [26/Jul/2019 09:37:31] "GET /singleOrder HTTP/1.1" 200 -
+2019-07-26 09:37:49,208 C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads\mijn_openstaande_bestellingen.xls
+2019-07-26 09:37:49,292 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:37:49,551 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:37:49,556 [Success] Bearer token obtained
+2019-07-26 09:37:49,562 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:37:50,100 https://api.bol.com:443 "GET /retailer/orders/2444895940 HTTP/1.1" 404 None
+2019-07-26 09:37:50,174 Sending request 
+2019-07-26 09:37:50,187 127.0.0.1 - - [26/Jul/2019 09:37:50] "GET /singleOrder HTTP/1.1" 200 -
+2019-07-26 09:38:57,979  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:38:58,041  * Restarting with stat
+2019-07-26 09:38:59,019 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:38:59,284 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:38:59,287 [Success] Bearer token obtained
+2019-07-26 09:38:59,974 127.0.0.1 - - [26/Jul/2019 09:38:59] "GET / HTTP/1.1" 200 -
+2019-07-26 09:39:01,007 127.0.0.1 - - [26/Jul/2019 09:39:01] "POST /bol HTTP/1.1" 200 -
+2019-07-26 09:39:19,687 127.0.0.1 - - [26/Jul/2019 09:39:19] "POST /bol HTTP/1.1" 200 -
+2019-07-26 09:39:38,288  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:39:38,329  * Restarting with stat
+2019-07-26 09:39:39,230 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:39:39,599 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:39:39,604 [Success] Bearer token obtained
+2019-07-26 09:39:46,558  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:39:46,618  * Restarting with stat
+2019-07-26 09:39:47,529 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:39:47,804 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:39:47,810 [Success] Bearer token obtained
+2019-07-26 09:39:48,523 127.0.0.1 - - [26/Jul/2019 09:39:48] "GET / HTTP/1.1" 200 -
+2019-07-26 09:39:49,783 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:39:50,007 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:39:50,010 [Success] Bearer token obtained
+2019-07-26 09:39:50,024 127.0.0.1 - - [26/Jul/2019 09:39:50] "POST /bol HTTP/1.1" 500 -
+2019-07-26 09:39:50,341 127.0.0.1 - - [26/Jul/2019 09:39:50] "GET /bol?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-07-26 09:39:50,347 127.0.0.1 - - [26/Jul/2019 09:39:50] "GET /bol?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-07-26 09:39:50,352 127.0.0.1 - - [26/Jul/2019 09:39:50] "GET /bol?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-07-26 09:39:50,590 127.0.0.1 - - [26/Jul/2019 09:39:50] "GET /bol?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-07-26 09:39:50,718 127.0.0.1 - - [26/Jul/2019 09:39:50] "GET /bol?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:39:50,725 127.0.0.1 - - [26/Jul/2019 09:39:50] "GET /bol?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:40:11,900  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:40:11,973  * Restarting with stat
+2019-07-26 09:40:12,941 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:40:13,183 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:40:13,183 [Success] Bearer token obtained
+2019-07-26 09:40:20,264  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:40:20,324  * Restarting with stat
+2019-07-26 09:40:21,266 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:40:21,487 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:40:21,493 [Success] Bearer token obtained
+2019-07-26 09:40:23,364 127.0.0.1 - - [26/Jul/2019 09:40:23] "POST /bol HTTP/1.1" 500 -
+2019-07-26 09:40:23,603 127.0.0.1 - - [26/Jul/2019 09:40:23] "GET /bol?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-07-26 09:40:23,685 127.0.0.1 - - [26/Jul/2019 09:40:23] "GET /bol?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-07-26 09:40:23,685 127.0.0.1 - - [26/Jul/2019 09:40:23] "GET /bol?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-07-26 09:40:23,745 127.0.0.1 - - [26/Jul/2019 09:40:23] "GET /bol?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:40:24,053 127.0.0.1 - - [26/Jul/2019 09:40:24] "GET /bol?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-07-26 09:40:24,301 127.0.0.1 - - [26/Jul/2019 09:40:24] "GET /bol?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:40:39,303  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:40:39,363  * Restarting with stat
+2019-07-26 09:40:40,279 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:40:40,538 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:40:40,540 [Success] Bearer token obtained
+2019-07-26 09:40:42,286 127.0.0.1 - - [26/Jul/2019 09:40:42] "POST /bol HTTP/1.1" 200 -
+2019-07-26 09:41:12,976  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:41:51,520 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:41:51,830 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:41:51,832 [Success] Bearer token obtained
+2019-07-26 09:41:52,275 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:41:52,531 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:41:52,537 [Success] Bearer token obtained
+2019-07-26 09:41:52,556 127.0.0.1 - - [26/Jul/2019 09:41:52] "GET / HTTP/1.1" 200 -
+2019-07-26 09:42:02,280 127.0.0.1 - - [26/Jul/2019 09:42:02] "POST /bol HTTP/1.1" 200 -
+2019-07-26 09:42:17,868  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:42:17,930  * Restarting with stat
+2019-07-26 09:42:18,938 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:42:19,227 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:42:19,229 [Success] Bearer token obtained
+2019-07-26 09:42:23,061 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:42:23,283 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:42:23,287 [Success] Bearer token obtained
+2019-07-26 09:42:23,289 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:42:23,596 https://api.bol.com:443 "GET /retailer/orders/2432222550 HTTP/1.1" 404 None
+2019-07-26 09:42:23,695 127.0.0.1 - - [26/Jul/2019 09:42:23] "POST /bol HTTP/1.1" 500 -
+2019-07-26 09:42:23,710 127.0.0.1 - - [26/Jul/2019 09:42:23] "GET /bol?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-07-26 09:42:24,016 127.0.0.1 - - [26/Jul/2019 09:42:24] "GET /bol?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-07-26 09:42:24,020 127.0.0.1 - - [26/Jul/2019 09:42:24] "GET /bol?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-07-26 09:42:24,426 127.0.0.1 - - [26/Jul/2019 09:42:24] "GET /bol?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-07-26 09:42:24,432 127.0.0.1 - - [26/Jul/2019 09:42:24] "GET /bol?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:42:24,680 127.0.0.1 - - [26/Jul/2019 09:42:24] "GET /bol?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-07-26 09:42:46,414  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-07-26 09:42:46,480  * Restarting with stat
+2019-07-26 09:42:47,430 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:42:47,751 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:42:47,757 [Success] Bearer token obtained
+2019-07-26 09:42:49,685 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:42:49,931 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:42:49,970 [Success] Bearer token obtained
+2019-07-26 09:42:49,977 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:42:50,323 https://api.bol.com:443 "GET /retailer/orders/2432222550 HTTP/1.1" 404 None
+2019-07-26 09:42:50,425 127.0.0.1 - - [26/Jul/2019 09:42:50] "POST /bol HTTP/1.1" 200 -
+2019-07-26 09:43:14,607 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:43:14,859 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:43:14,864 [Success] Bearer token obtained
+2019-07-26 09:43:14,870 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:43:15,198 https://api.bol.com:443 "GET /retailer/orders/2453724160 HTTP/1.1" 200 None
+2019-07-26 09:43:15,271 127.0.0.1 - - [26/Jul/2019 09:43:15] "POST /bol HTTP/1.1" 200 -
+2019-07-26 09:45:02,953  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:45:03,025  * Restarting with stat
+2019-07-26 09:45:03,919 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:45:04,199 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:45:04,201 [Success] Bearer token obtained
+2019-07-26 09:45:11,324  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:45:11,384  * Restarting with stat
+2019-07-26 09:45:12,331 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:45:12,612 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:45:12,615 [Success] Bearer token obtained
+2019-07-26 09:45:16,799 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:45:17,005 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:45:17,010 [Success] Bearer token obtained
+2019-07-26 09:45:17,016 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:45:17,313 https://api.bol.com:443 "GET /retailer/orders/2453724160 HTTP/1.1" 200 542
+2019-07-26 09:45:17,333 127.0.0.1 - - [26/Jul/2019 09:45:17] "POST /bol HTTP/1.1" 200 -
+2019-07-26 09:45:43,142  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:45:43,206  * Restarting with stat
+2019-07-26 09:45:44,147 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:45:44,401 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:45:44,401 [Success] Bearer token obtained
+2019-07-26 09:45:49,356  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:45:49,398  * Restarting with stat
+2019-07-26 09:45:50,314 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:45:50,590 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:45:50,590 [Success] Bearer token obtained
+2019-07-26 09:45:52,394  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:45:52,441  * Restarting with stat
+2019-07-26 09:45:53,394 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:45:53,637 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:45:53,665 [Success] Bearer token obtained
+2019-07-26 09:46:05,012  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:46:05,058  * Restarting with stat
+2019-07-26 09:46:05,967 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:46:06,205 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:46:06,208 [Success] Bearer token obtained
+2019-07-26 09:46:11,480 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:46:11,719 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:46:11,725 [Success] Bearer token obtained
+2019-07-26 09:46:11,732 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:46:12,064 https://api.bol.com:443 "GET /retailer/orders/2453724160 HTTP/1.1" 200 None
+2019-07-26 09:46:12,148 127.0.0.1 - - [26/Jul/2019 09:46:12] "POST /bol HTTP/1.1" 200 -
+2019-07-26 09:47:00,716 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:47:00,958 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:47:00,987 [Success] Bearer token obtained
+2019-07-26 09:47:01,447 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:47:01,873 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:47:01,873 [Success] Bearer token obtained
+2019-07-26 09:47:34,253 127.0.0.1 - - [26/Jul/2019 09:47:34] "GET / HTTP/1.1" 200 -
+2019-07-26 09:47:53,416  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:47:53,481  * Restarting with stat
+2019-07-26 09:47:54,433 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:47:55,807 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:47:55,841 [Success] Bearer token obtained
+2019-07-26 09:53:48,874 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:53:49,176 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:53:49,181 [Success] Bearer token obtained
+2019-07-26 09:53:49,189 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 09:53:49,652 https://api.bol.com:443 "GET /retailer/orders HTTP/1.1" 200 None
+2019-07-26 09:53:49,874 127.0.0.1 - - [26/Jul/2019 09:53:49] "POST /uploader HTTP/1.1" 200 -
+2019-07-26 09:54:32,370  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-07-26 09:54:32,417  * Restarting with stat
+2019-07-26 09:54:33,317 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:54:33,576 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:54:33,607 [Success] Bearer token obtained
+2019-07-26 09:59:26,368  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 09:59:26,426  * Restarting with stat
+2019-07-26 09:59:27,379 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 09:59:27,701 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 09:59:27,701 [Success] Bearer token obtained
+2019-07-26 10:00:09,919  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 10:00:09,991  * Restarting with stat
+2019-07-26 10:00:10,987 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 10:00:11,196 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 10:00:11,228 [Success] Bearer token obtained
+2019-07-26 10:01:47,125  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 10:01:55,078  * Restarting with stat
+2019-07-26 10:01:56,046 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 10:01:56,286 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 10:01:56,293 [Success] Bearer token obtained
+2019-07-26 10:01:56,313 127.0.0.1 - - [26/Jul/2019 10:01:56] "GET / HTTP/1.1" 200 -
+2019-07-26 10:02:00,479 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 10:02:00,729 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 10:02:00,734 [Success] Bearer token obtained
+2019-07-26 10:02:00,742 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 10:02:01,163 https://api.bol.com:443 "GET /retailer/orders HTTP/1.1" 200 None
+2019-07-26 10:02:01,166 GOT ORDERS
+2019-07-26 10:02:01,499 SAVING ORDERS
+2019-07-26 10:02:01,708 127.0.0.1 - - [26/Jul/2019 10:02:01] "POST /uploader HTTP/1.1" 200 -
+2019-07-26 10:05:38,706  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-07-26 10:05:38,767  * Restarting with stat
+2019-07-26 10:06:06,562 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 10:06:06,901 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 10:06:06,906 [Success] Bearer token obtained
+2019-07-26 10:06:06,919 127.0.0.1 - - [26/Jul/2019 10:06:06] "GET / HTTP/1.1" 200 -
+2019-07-26 10:07:05,448 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 10:07:05,741 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 10:07:05,791 [Success] Bearer token obtained
+2019-07-26 10:07:05,802 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 10:07:06,156 https://api.bol.com:443 "GET /retailer/orders/2444844710%20 HTTP/1.1" 500 173
+2019-07-26 10:07:06,160 127.0.0.1 - - [26/Jul/2019 10:07:06] "POST /bol HTTP/1.1" 200 -
+2019-07-26 10:07:24,723 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 10:07:25,006 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 10:07:25,012 [Success] Bearer token obtained
+2019-07-26 10:07:25,020 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 10:07:25,615 https://api.bol.com:443 "GET /retailer/orders/2444844710 HTTP/1.1" 200 None
+2019-07-26 10:07:25,698 127.0.0.1 - - [26/Jul/2019 10:07:25] "POST /bol HTTP/1.1" 200 -
+2019-07-26 10:14:58,165  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-07-26 10:14:58,227  * Restarting with stat
+2019-07-26 10:15:23,642  * Restarting with stat
+2019-07-26 11:35:43,101 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 11:35:43,384 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 11:35:43,384 [Success] Bearer token obtained
+2019-07-26 11:35:47,291  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-07-26 11:36:10,420 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 11:36:10,657 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 11:36:10,657 [Success] Bearer token obtained
+2019-07-26 11:36:11,125 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 11:36:11,543 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 11:36:11,548 [Success] Bearer token obtained
+2019-07-26 11:37:43,310 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 11:37:43,568 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 11:37:43,570 [Success] Bearer token obtained
+2019-07-26 11:37:44,067 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 11:37:44,328 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 11:37:44,348 [Success] Bearer token obtained
+2019-07-26 11:37:45,320 127.0.0.1 - - [26/Jul/2019 11:37:45] "GET / HTTP/1.1" 200 -
+2019-07-26 11:39:34,530  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-07-26 11:39:34,597  * Restarting with stat
+2019-07-26 11:39:35,529 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 11:39:35,809 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 11:39:35,816 [Success] Bearer token obtained
+2019-07-26 12:36:45,848 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 12:36:45,848 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 12:36:46,204 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 12:36:46,208 [Success] Bearer token obtained
+2019-07-26 12:36:46,383 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 12:36:46,387 [Success] Bearer token obtained
+2019-07-26 12:36:46,404 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 12:36:46,858 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 12:36:46,863 [Success] Bearer token obtained
+2019-07-26 12:36:46,868 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 12:36:47,932 https://api.bol.com:443 "GET /retailer/orders?page=1 HTTP/1.1" 200 None
+2019-07-26 12:36:47,945 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 12:36:48,399 https://api.bol.com:443 "GET /retailer/orders?page=2 HTTP/1.1" 200 None
+2019-07-26 12:36:48,411 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 12:36:48,899 https://api.bol.com:443 "GET /retailer/orders?page=3 HTTP/1.1" 200 None
+2019-07-26 12:36:48,913 Starting new HTTPS connection (1): api.bol.com:443
+2019-07-26 12:36:49,413 https://api.bol.com:443 "GET /retailer/orders?page=4 HTTP/1.1" 200 None
+2019-07-26 12:36:49,790 127.0.0.1 - - [26/Jul/2019 12:36:49] "GET / HTTP/1.1" 200 -
+2019-07-26 12:42:20,289  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-07-26 12:42:20,355  * Restarting with stat
+2019-07-26 12:42:21,320 Starting new HTTPS connection (1): login.bol.com:443
+2019-07-26 12:42:22,255 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-07-26 12:42:22,261 [Success] Bearer token obtained
