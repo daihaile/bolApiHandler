@@ -83,6 +83,7 @@ class BolHandler():
         auth = "Bearer " + self.BEARER_TOKEN
         header = {
             'Accept': 'application/vnd.retailer.v3+json',
+            'content-type':'application/vnd.retailer.v3+json',
             'Authorization': auth,
             'Accept-Encoding': "gzip, deflate",
             'Host': "api.bol.com",
@@ -188,3 +189,7 @@ def is_number(s):
 #print(len(orders['orders']))
 #bol.put_trackin_to_orderId("2445845650","GLS","1345057486531")
 #bol.put_trackin_to_orderId("2444844710","DPD","01345057485995")
+
+
+bol = BolHandler()
+print(bol.BEARER_TOKEN)
