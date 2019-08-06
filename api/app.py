@@ -1,5 +1,8 @@
 from flask import Flask
 from flask import request
+from flask import send_file
+
+
 import json
 import pandas as pd
 import os
@@ -38,7 +41,7 @@ api.add_resource(Landing, '/landing',
 def test():
     #orders = bolHandler.get_orders()
 
-    #excelHandler.save_orders_to_csv(orders)
+    # excelHandler.save_orders_to_csv(orders)
     return render_template('index.html', message="saved orders to csv file")
 
 
@@ -50,18 +53,13 @@ def get_from_bol():
     return render_template('index.html', order=r2)
 
 
-@app.route('/singleOrder')
-def singleOrder():
-    path = app.config['UPLOAD_FOLDER'] + "\\" + \
-        "mijn_openstaande_bestellingen.xls"
-    logging.info(path)
-    df = excelHandler.read_csv(path)
-    order = bolHandler.get_order_by_id("/orders", 2444895940)
-
-    # filter Dataframe with bol API get /orders/
-    # filter_df(df)
-    return render_template('index.html', order=order)
-
+@app.route('/put', methods=['GET'])
+def putBol():
+    mergedDF = pd.read_csv(
+        r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\merged.csv", dtype=str) 
+    bolHandler.put_trackin_to_orderId(mergedDF)
+    
+    return mergedDF.to_json()
 
 @app.route('/uploader', methods=['GET', 'POST'])
 def upload_file():
@@ -84,19 +82,19 @@ def upload_file():
             df = excelHandler.read_tracking_csv(path)
             df.rename(
                 columns={'Client Order Reference': 'orderId'}, inplace=True)
-            
-            
+
             #ordersRaw = bolHandler.get_orders()
-            #excelHandler.save_orders_to_csv(ordersRaw)
-            #excelHandler.save_orders_to_excel(ordersRaw)
-            orders = pd.read_csv(r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\orders.csv",dtype=str, usecols=['orderId','orderItemId','cancelRequest'])
+            # excelHandler.save_orders_to_csv(ordersRaw)
+            # excelHandler.save_orders_to_excel(ordersRaw)
+            orders = pd.read_csv(r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\orders.csv", dtype=str, usecols=[
+                                 'orderId', 'orderItemId', 'cancelRequest'])
 
             # filter Dataframe with bol API get /orders/
             #  filter_df(orders, df)
-            mergedDF= mergeDF(orders,df)
+            mergedDF = mergeDF(orders, df)
             print(mergedDF.dropna())
             # return html_from_df
-            excelHandler.save_to_csv(mergedDF,'merged')
+            excelHandler.save_to_csv(mergedDF, 'merged')
 
             return render_template('index.html', tables=[mergedDF.to_html(classes='data')], titles=df.columns.values, message='got csv')
 
@@ -154,7 +152,7 @@ def mergeDF(ordersDF, tatDF):
                     break  # break out of tat loop
                 elif(tat[1]['used'] == True):
                     print("Tracking number {} used already, searching for free tracking number with id {}".format(
-                         tat[1]['Tracking Reference'],tat[1].orderId))
+                        tat[1]['Tracking Reference'], tat[1].orderId))
 
     logging.info("Found {} matching Ids".format(count))
     print("Found {} matching Ids".format(count))
@@ -171,4 +169,4 @@ def mergeDF(ordersDF, tatDF):
 
 
 if __name__ == '__main__':
-    app.run('localhost', debug=True)
+    app.run('localhost', debug=True, port=5050)

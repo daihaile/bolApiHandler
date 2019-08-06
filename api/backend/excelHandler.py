@@ -18,19 +18,13 @@ class ExcelHandler():
         super().__init__()
 
     def read_csv(self,filename):
-        #u_cols = ['Client Order Reference','Courier','Tracking Reference']
         df = pd.read_csv(filename, 
             sep='\;',
             engine='python',
             #usecols=u_cols,
             dtype=str)
-
-
-
-        #df = df[0].str.split(',', expand=True
-
         return df
-        #return self.filter_dataframe(df,courier="DPD Predict")
+
 
     def read_tracking_csv(self,filename):
         u_cols = ['Client Order Reference','Courier','Tracking Reference']
@@ -42,6 +36,10 @@ class ExcelHandler():
         dtype={'Tracking Reference': str,'Client Order Reference': str})
   
         df.rename(columns={'Client Order Reference':'orderId'},inplace=True)
+
+        df['Courier'] = df['Courier'].replace('GLS Normalpaket','GLS')
+        df['Courier'] = df['Courier'].replace('GLS Normalpaket','GLS')
+
         return df
         #return self.filter_dataframe(df,courier="DPD Predict")
 

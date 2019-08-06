@@ -1,5 +1,6 @@
 import requests
 import logging
+import time
 import json
 import pprint as pp
 
@@ -146,16 +147,10 @@ class BolHandler():
 
 
 
-    def put_trackin_to_orderId(self,orderId, transporterCode, trackAndTrace):
-        orderDict = self.map_to_dict(orderId, transporterCode, trackAndTrace)
-        logging.info("[PUT] Adding transport information to orderItemId: " 
-            + orderDict['orderItemId'] + ", orderId: " + orderDict['orderId'])
-        print(orderDict)
-
-        url = self.URL + "/orders/" + orderDict['orderItemId'] + "/shipment"
+    def put_trackin_to_orderId(self,mergedDF):
+        logging.info("[PUT] Adding transport information with")
+        logging.info(mergedDF)
         auth = "Bearer " + self.BEARER_TOKEN
-
-        print(url)
         headers = {
             'Accept': "application/vnd.retailer.v3+json",
             'content-type':'application/vnd.retailer.v3+json',
@@ -165,16 +160,27 @@ class BolHandler():
             'Host': "api.bol.com",
             'Accept-Encoding': "gzip, deflate",
         }
-        data = {
-            "shipmentReference": "",
-            "transport": {
-                "transporterCode": orderDict['transporterCode'],
-                "trackAndTrace": orderDict['trackAndTrace']
+
+        for row in mergedDF.iterrows():
+            print("Send trackingdata to orderId: "+ str(row[1]['orderId']))
+            logging.info(row)
+            url = self.URL + "/orders/" + row[1]['orderItemId'] + "/shipment"
+            print(url)
+            data = {
+                "shipmentReference": "",
+                "transport": {
+                    "transporterCode": row[1]['Courier'],
+                    "trackAndTrace": row[1]['track']
+                }
             }
-        }
-        #print(self.BEARER_TOKEN)
-        r = requests.put(url, data=json.dumps(data),headers=headers)
-        print(r.text)
+            # PUT REQUEST ABSENDEN
+            pp.pprint(data)
+            logging.info("Send trackingdata to orderId: "+ str(row[1]['orderId']))
+            #r = requests.put(url, data=json.dumps(data),headers=headers)
+            #pp.pprint(r.text)
+            time.sleep(1)
+            print()
+
 
 
 
