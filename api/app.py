@@ -36,15 +36,15 @@ api.add_resource(Landing, '/landing',
 
 @app.route('/')
 def test():
-    orders = bolHandler.get_orders()
+    #orders = bolHandler.get_orders()
     
-    excelHandler.save_orders_to_excel(orders)
+    #excelHandler.save_orders_to_excel(orders)
     return render_template('index.html', message="saved orders to excel file")
 
     
 @app.route('/bol', methods=['GET','POST'])
 def get_from_bol():
-    path= request.form['path']
+    path = request.form['path']
     r = bolHandler.get_from_bol(path)
     r2 = json.dumps(r, sort_keys = False, indent = 4, separators = (',', ': '))
     return render_template('index.html',order= r2)
@@ -78,30 +78,37 @@ def upload_file():
             file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
             path = app.config['UPLOAD_FOLDER'] + "\\" +  filename
             print(path)
+
             df = excelHandler.read_tracking_csv(path)
+            df.rename(columns={'Client Order Reference':'orderId'},inplace=True)
+            orders = bolHandler.get_orders()
+
 
             # filter Dataframe with bol API get /orders/
-            filter_df(df)
+            filter_df(orders,df)
+
             # return html_from_df
+
+
             return render_template('index.html',tables=[df.to_html(classes='data')],titles=df.columns.values,message='got csv')
 
         else:
             return "errrooooororrrrs"
         
-def filter_df(tat_df):
-    orders = bolHandler.get_orders()
+def filter_df(orders,tat_df):
+
     logging.info("GOT ORDERS")
+
+    # ADD TRACKING TO OBJECTS
+    dup_df = tat_df[tat_df.duplicated()]
+
     order_DF = excelHandler.save_orders_to_excel(orders)
     order_DF.drop(['ean','cancelRequest','quantity','dateTimeOrderPlaced'],
         axis=1, inplace=True)
     logging.info("SAVING ORDERS")
     
-    order_DF.rename(columns={'orderId':'Client Order Reference'},inplace=True)
-
     #mergedDF = pd.merge(tat_df,order_DF,on=['Client Order Reference'],how='right')
-    #print(mergedDF)
-
-    print(order_DF)
+    #print(mergedDF
 
 
 

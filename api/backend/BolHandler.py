@@ -63,6 +63,7 @@ class BolHandler():
             r = requests.get(self.URL + url, headers=header, params= query)
             res = r.json()
             if(len(res) > 0):
+                logging.info("ADDED ANOTHER PAGE")
                 orderDict['orders'].extend(res['orders'])
         print("got " + str(len(orderDict['orders'])) + " orders")
         return orderDict
@@ -191,5 +192,4 @@ def is_number(s):
 #bol.put_trackin_to_orderId("2444844710","DPD","01345057485995")
 
 
-bol = BolHandler()
-print(bol.BEARER_TOKEN)
+#bol = BolHandler()
