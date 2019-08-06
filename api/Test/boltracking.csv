@@ -1,4 +1,4 @@
-﻿DO Number;Referenzbeleg;Date;orderId;Courier;Tracking Reference;Comission;Comission 2
+﻿DO Number;Referenzbeleg;Date;Client Order Reference;Courier;Tracking Reference;Comission;Comission 2
 KL590018;KA521567;43682;2444460400;GLS Normalpaket;352559699792;;
 KL581064;KA514089;43682;2450989450;DPD Predict;01345057490476;;
 KL581063;KA514089;43682;2450989450;DPD Predict;01345057490477;;
