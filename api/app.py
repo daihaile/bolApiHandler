@@ -57,9 +57,10 @@ def get_from_bol():
 def putBol():
     mergedDF = pd.read_csv(
         r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\merged.csv", dtype=str) 
-    bolHandler.put_trackin_to_orderId(mergedDF)
+    mergedDF.replace('GLS Normalpaket','GLS', inplace=True)
+    df = bolHandler.put_trackin_to_orderId(mergedDF)
     
-    return mergedDF.to_json()
+    return df.to_json()
 
 @app.route('/uploader', methods=['GET', 'POST'])
 def upload_file():
@@ -83,11 +84,11 @@ def upload_file():
             df.rename(
                 columns={'Client Order Reference': 'orderId'}, inplace=True)
 
-            #ordersRaw = bolHandler.get_orders()
-            # excelHandler.save_orders_to_csv(ordersRaw)
-            # excelHandler.save_orders_to_excel(ordersRaw)
-            orders = pd.read_csv(r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\orders.csv", dtype=str, usecols=[
-                                 'orderId', 'orderItemId', 'cancelRequest'])
+            ordersRaw = bolHandler.get_orders()
+            orders = excelHandler.save_orders_to_csv(ordersRaw)
+            excelHandler.save_orders_to_excel(ordersRaw)
+            #orders = pd.read_csv(r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\orders.csv", dtype=str, usecols=[
+            #                     'orderId', 'orderItemId', 'cancelRequest'])
 
             # filter Dataframe with bol API get /orders/
             #  filter_df(orders, df)

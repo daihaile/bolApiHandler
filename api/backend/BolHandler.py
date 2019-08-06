@@ -162,6 +162,7 @@ class BolHandler():
         }
 
         for row in mergedDF.iterrows():
+            print()
             print("Send trackingdata to orderId: "+ str(row[1]['orderId']))
             logging.info(row)
             url = self.URL + "/orders/" + row[1]['orderItemId'] + "/shipment"
@@ -178,8 +179,11 @@ class BolHandler():
             logging.info("Send trackingdata to orderId: "+ str(row[1]['orderId']))
             #r = requests.put(url, data=json.dumps(data),headers=headers)
             #pp.pprint(r.text)
+            #logging.warning(r.text)
             time.sleep(1)
             print()
+        
+        return mergedDF
 
 
 

@@ -2556,3 +2556,628 @@ Name: 0, dtype: object)
 2019-08-06 16:43:18,812 Starting new HTTPS connection (1): login.bol.com:443
 2019-08-06 16:43:19,063 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
 2019-08-06 16:43:19,064 [Success] Bearer token obtained
+2019-08-06 17:14:35,384 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:14:35,768 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:14:35,770 [Success] Bearer token obtained
+2019-08-06 17:14:35,771 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:14:36,022 https://api.bol.com:443 "GET /retailer2471888030 HTTP/1.1" 404 402
+2019-08-06 17:14:40,411 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:14:41,051 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:14:41,056 [Success] Bearer token obtained
+2019-08-06 17:14:41,064 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:14:41,420 https://api.bol.com:443 "GET /retailer/orders/2471888030 HTTP/1.1" 200 511
+2019-08-06 17:14:36,057 127.0.0.1 - - [06/Aug/2019 17:14:36] "POST /bol HTTP/1.1" 500 -
+2019-08-06 17:14:41,428 127.0.0.1 - - [06/Aug/2019 17:14:41] "POST /bol HTTP/1.1" 200 -
+2019-08-06 17:31:02,636 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:31:03,281 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:31:03,281 [Success] Bearer token obtained
+2019-08-06 17:31:04,115 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:31:04,142 [Success] Bearer token obtained
+2019-08-06 17:31:50,011  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:31:50,069  * Restarting with stat
+2019-08-06 17:31:50,991 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:31:51,263 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:31:51,269 [Success] Bearer token obtained
+2019-08-06 17:33:05,960  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:33:06,024  * Restarting with stat
+2019-08-06 17:33:07,921 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:33:08,133 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:33:08,138 [Success] Bearer token obtained
+2019-08-06 17:33:14,273  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:33:14,331  * Restarting with stat
+2019-08-06 17:33:15,261 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:33:15,444 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:33:15,469 [Success] Bearer token obtained
+2019-08-06 17:34:39,556 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:34:39,759 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:34:39,787 [Success] Bearer token obtained
+2019-08-06 17:34:39,795 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:34:40,103 https://api.bol.com:443 "GET /retailer/orders/2464511120 HTTP/1.1" 200 None
+2019-08-06 17:34:40,188 127.0.0.1 - - [06/Aug/2019 17:34:40] "POST /bol HTTP/1.1" 200 -
+2019-08-06 17:36:01,461  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-08-06 17:36:01,520  * Restarting with stat
+2019-08-06 17:36:03,509 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:36:03,840 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:36:03,840 [Success] Bearer token obtained
+2019-08-06 17:36:16,075  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:36:16,137  * Restarting with stat
+2019-08-06 17:36:17,119 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:36:17,320 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:36:17,330 [Success] Bearer token obtained
+2019-08-06 17:36:21,522 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:36:21,732 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:36:21,733 [Success] Bearer token obtained
+2019-08-06 17:36:22,252 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:36:23,628 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:36:23,659 [Success] Bearer token obtained
+2019-08-06 17:36:25,521 127.0.0.1 - - [06/Aug/2019 17:36:25] "GET / HTTP/1.1" 200 -
+2019-08-06 17:36:31,825  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:36:31,880  * Restarting with stat
+2019-08-06 17:36:32,816 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:36:33,000 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:36:33,024 [Success] Bearer token obtained
+2019-08-06 17:36:34,745 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:36:34,929 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:36:34,931 [Success] Bearer token obtained
+2019-08-06 17:36:35,528 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:36:35,720 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:36:35,745 [Success] Bearer token obtained
+2019-08-06 17:36:36,741 127.0.0.1 - - [06/Aug/2019 17:36:36] "GET / HTTP/1.1" 200 -
+2019-08-06 17:37:15,188 [PUT] Adding transport information with
+2019-08-06 17:37:15,188   orderItemId cancelRequest     orderId          Courier         track
+0  2279856360         False  2464511120  GLS Normalpaket  352559699693
+1  2279735341         False  2464082890  GLS Normalpaket  352559699808
+2019-08-06 17:37:15,196 (0, orderItemId           2279856360
+cancelRequest              False
+orderId               2464511120
+Courier          GLS Normalpaket
+track               352559699693
+Name: 0, dtype: object)
+2019-08-06 17:37:15,200 Send trackingdata to orderId: 2464511120
+2019-08-06 17:37:16,202 (1, orderItemId           2279735341
+cancelRequest              False
+orderId               2464082890
+Courier          GLS Normalpaket
+track               352559699808
+Name: 1, dtype: object)
+2019-08-06 17:37:16,210 Send trackingdata to orderId: 2464082890
+2019-08-06 17:37:17,213 127.0.0.1 - - [06/Aug/2019 17:37:17] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:38:06,710  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-08-06 17:38:06,771  * Restarting with stat
+2019-08-06 17:38:07,833 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:38:08,055 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:38:08,059 [Success] Bearer token obtained
+2019-08-06 17:38:10,673  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-08-06 17:38:10,733  * Restarting with stat
+2019-08-06 17:38:12,636 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:38:12,832 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:38:12,839 [Success] Bearer token obtained
+2019-08-06 17:38:54,055  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-08-06 17:38:54,119  * Restarting with stat
+2019-08-06 17:38:55,053 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:38:55,252 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:38:55,256 [Success] Bearer token obtained
+2019-08-06 17:39:19,474  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-08-06 17:39:19,532  * Restarting with stat
+2019-08-06 17:39:20,470 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:39:20,653 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:39:20,655 [Success] Bearer token obtained
+2019-08-06 17:39:32,118  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-08-06 17:39:32,177  * Restarting with stat
+2019-08-06 17:39:33,098 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:39:33,430 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:39:33,450 [Success] Bearer token obtained
+2019-08-06 17:40:13,955  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-08-06 17:40:14,012  * Restarting with stat
+2019-08-06 17:40:14,933 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:40:15,125 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:40:15,131 [Success] Bearer token obtained
+2019-08-06 17:40:16,766 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:40:16,951 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:40:16,952 [Success] Bearer token obtained
+2019-08-06 17:40:17,559 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:40:17,882 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:40:17,885 [Success] Bearer token obtained
+2019-08-06 17:40:22,718 [PUT] Adding transport information with
+2019-08-06 17:40:22,718   orderItemId cancelRequest     orderId          Courier         track
+0  2279856360         False  2464511120  GLS Normalpaket  352559699693
+1  2279735341         False  2464082890  GLS Normalpaket  352559699808
+2019-08-06 17:40:22,734 (0, orderItemId           2279856360
+cancelRequest              False
+orderId               2464511120
+Courier          GLS Normalpaket
+track               352559699693
+Name: 0, dtype: object)
+2019-08-06 17:40:22,740 Send trackingdata to orderId: 2464511120
+2019-08-06 17:40:23,744 (1, orderItemId           2279735341
+cancelRequest              False
+orderId               2464082890
+Courier          GLS Normalpaket
+track               352559699808
+Name: 1, dtype: object)
+2019-08-06 17:40:23,756 Send trackingdata to orderId: 2464082890
+2019-08-06 17:40:24,761 127.0.0.1 - - [06/Aug/2019 17:40:24] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:40:52,803  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\excelHandler.py', reloading
+2019-08-06 17:40:52,860  * Restarting with stat
+2019-08-06 17:40:53,840 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:40:54,038 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:40:54,041 [Success] Bearer token obtained
+2019-08-06 17:41:20,571  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:41:20,630  * Restarting with stat
+2019-08-06 17:42:30,990 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:42:31,260 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:42:31,262 [Success] Bearer token obtained
+2019-08-06 17:42:31,786 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:42:32,011 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:42:32,013 [Success] Bearer token obtained
+2019-08-06 17:42:33,376 [PUT] Adding transport information with
+2019-08-06 17:42:33,376   orderItemId cancelRequest     orderId          Courier         track
+0  2279856360         False  2464511120  GLS Normalpaket  352559699693
+1  2279735341         False  2464082890  GLS Normalpaket  352559699808
+2019-08-06 17:42:33,386 (0, orderItemId           2279856360
+cancelRequest              False
+orderId               2464511120
+Courier          GLS Normalpaket
+track               352559699693
+Name: 0, dtype: object)
+2019-08-06 17:42:33,390 Send trackingdata to orderId: 2464511120
+2019-08-06 17:42:34,395 (1, orderItemId           2279735341
+cancelRequest              False
+orderId               2464082890
+Courier          GLS Normalpaket
+track               352559699808
+Name: 1, dtype: object)
+2019-08-06 17:42:34,407 Send trackingdata to orderId: 2464082890
+2019-08-06 17:42:35,412 127.0.0.1 - - [06/Aug/2019 17:42:35] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:42:40,259 [PUT] Adding transport information with
+2019-08-06 17:42:40,260   orderItemId cancelRequest     orderId          Courier         track
+0  2279856360         False  2464511120  GLS Normalpaket  352559699693
+1  2279735341         False  2464082890  GLS Normalpaket  352559699808
+2019-08-06 17:42:40,268 (0, orderItemId           2279856360
+cancelRequest              False
+orderId               2464511120
+Courier          GLS Normalpaket
+track               352559699693
+Name: 0, dtype: object)
+2019-08-06 17:42:40,273 Send trackingdata to orderId: 2464511120
+2019-08-06 17:42:41,277 (1, orderItemId           2279735341
+cancelRequest              False
+orderId               2464082890
+Courier          GLS Normalpaket
+track               352559699808
+Name: 1, dtype: object)
+2019-08-06 17:42:41,291 Send trackingdata to orderId: 2464082890
+2019-08-06 17:42:42,294 127.0.0.1 - - [06/Aug/2019 17:42:42] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:43:21,905  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:43:21,960  * Restarting with stat
+2019-08-06 17:43:22,910 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:43:23,178 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:43:23,180 [Success] Bearer token obtained
+2019-08-06 17:43:24,905  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:43:24,965  * Restarting with stat
+2019-08-06 17:43:25,864 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:43:26,056 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:43:26,062 [Success] Bearer token obtained
+2019-08-06 17:43:30,113  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:43:30,180  * Restarting with stat
+2019-08-06 17:43:31,149 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:43:31,350 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:43:31,356 [Success] Bearer token obtained
+2019-08-06 17:43:42,823  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-08-06 17:43:42,899  * Restarting with stat
+2019-08-06 17:43:43,875 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:43:44,058 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:43:44,061 [Success] Bearer token obtained
+2019-08-06 17:43:44,759  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-08-06 17:43:44,815  * Restarting with stat
+2019-08-06 17:43:45,748 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:43:45,927 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:43:45,928 [Success] Bearer token obtained
+2019-08-06 17:43:47,824 [PUT] Adding transport information with
+2019-08-06 17:43:47,824   orderItemId cancelRequest     orderId          Courier         track
+0  2279856360         False  2464511120  GLS Normalpaket  352559699693
+1  2279735341         False  2464082890  GLS Normalpaket  352559699808
+2019-08-06 17:43:47,834 (0, orderItemId           2279856360
+cancelRequest              False
+orderId               2464511120
+Courier          GLS Normalpaket
+track               352559699693
+Name: 0, dtype: object)
+2019-08-06 17:43:47,838 Send trackingdata to orderId: 2464511120
+2019-08-06 17:43:48,843 (1, orderItemId           2279735341
+cancelRequest              False
+orderId               2464082890
+Courier          GLS Normalpaket
+track               352559699808
+Name: 1, dtype: object)
+2019-08-06 17:43:48,856 Send trackingdata to orderId: 2464082890
+2019-08-06 17:43:49,858 127.0.0.1 - - [06/Aug/2019 17:43:49] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:43:56,586 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:43:56,765 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:43:56,765 [Success] Bearer token obtained
+2019-08-06 17:43:57,280 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:43:57,460 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:43:57,465 [Success] Bearer token obtained
+2019-08-06 17:44:10,104  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:44:10,165  * Restarting with stat
+2019-08-06 17:44:11,145 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:44:11,420 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:44:11,425 [Success] Bearer token obtained
+2019-08-06 17:44:16,309 [PUT] Adding transport information with
+2019-08-06 17:44:16,309   orderItemId cancelRequest     orderId          Courier         track
+0  2279856360         False  2464511120  GLS Normalpaket  352559699693
+1  2279735341         False  2464082890  GLS Normalpaket  352559699808
+2019-08-06 17:44:16,317 (0, orderItemId           2279856360
+cancelRequest              False
+orderId               2464511120
+Courier          GLS Normalpaket
+track               352559699693
+Name: 0, dtype: object)
+2019-08-06 17:44:16,321 Send trackingdata to orderId: 2464511120
+2019-08-06 17:44:17,326 (1, orderItemId           2279735341
+cancelRequest              False
+orderId               2464082890
+Courier          GLS Normalpaket
+track               352559699808
+Name: 1, dtype: object)
+2019-08-06 17:44:17,340 Send trackingdata to orderId: 2464082890
+2019-08-06 17:44:18,343 127.0.0.1 - - [06/Aug/2019 17:44:18] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:44:36,766  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-08-06 17:44:36,827  * Restarting with stat
+2019-08-06 17:44:37,809 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:44:37,999 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:44:38,000 [Success] Bearer token obtained
+2019-08-06 17:44:41,978  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:44:42,057  * Restarting with stat
+2019-08-06 17:44:43,057 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:44:43,278 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:44:43,283 [Success] Bearer token obtained
+2019-08-06 17:44:52,529  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-08-06 17:44:52,588  * Restarting with stat
+2019-08-06 17:44:53,537 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:44:53,757 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:44:53,780 [Success] Bearer token obtained
+2019-08-06 17:44:57,662  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-08-06 17:44:57,720  * Restarting with stat
+2019-08-06 17:44:58,622 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:44:58,800 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:44:58,820 [Success] Bearer token obtained
+2019-08-06 17:45:16,707  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-08-06 17:45:16,766  * Restarting with stat
+2019-08-06 17:45:17,795 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:45:17,980 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:45:17,995 [Success] Bearer token obtained
+2019-08-06 17:45:19,782  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:45:19,845  * Restarting with stat
+2019-08-06 17:45:33,862 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:45:34,096 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:45:34,098 [Success] Bearer token obtained
+2019-08-06 17:45:34,704 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:45:34,923 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:45:34,924 [Success] Bearer token obtained
+2019-08-06 17:45:37,751 [PUT] Adding transport information with
+2019-08-06 17:45:37,751   orderItemId cancelRequest     orderId          Courier         track
+0  2279856360         False  2464511120  GLS Normalpaket  352559699693
+1  2279735341         False  2464082890  GLS Normalpaket  352559699808
+2019-08-06 17:45:37,767 (0, orderItemId           2279856360
+cancelRequest              False
+orderId               2464511120
+Courier          GLS Normalpaket
+track               352559699693
+Name: 0, dtype: object)
+2019-08-06 17:45:37,780 127.0.0.1 - - [06/Aug/2019 17:45:37] "GET /put HTTP/1.1" 500 -
+2019-08-06 17:45:37,987 127.0.0.1 - - [06/Aug/2019 17:45:37] "GET /put?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-08-06 17:45:38,104 127.0.0.1 - - [06/Aug/2019 17:45:38] "GET /put?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-08-06 17:45:38,107 127.0.0.1 - - [06/Aug/2019 17:45:38] "GET /put?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-08-06 17:45:38,186 127.0.0.1 - - [06/Aug/2019 17:45:38] "GET /put?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-08-06 17:45:38,494 127.0.0.1 - - [06/Aug/2019 17:45:38] "GET /put?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-08-06 17:45:38,760 127.0.0.1 - - [06/Aug/2019 17:45:38] "GET /put?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-08-06 17:45:48,552  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:45:48,619  * Restarting with stat
+2019-08-06 17:45:49,574 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:45:49,758 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:45:49,760 [Success] Bearer token obtained
+2019-08-06 17:45:51,639  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:45:51,701  * Restarting with stat
+2019-08-06 17:45:54,114 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:45:54,280 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:45:54,312 [Success] Bearer token obtained
+2019-08-06 17:45:54,870 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:45:55,054 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:45:55,056 [Success] Bearer token obtained
+2019-08-06 17:45:55,392 [PUT] Adding transport information with
+2019-08-06 17:45:55,392   orderItemId cancelRequest     orderId          Courier         track
+0  2279856360         False  2464511120  GLS Normalpaket  352559699693
+1  2279735341         False  2464082890  GLS Normalpaket  352559699808
+2019-08-06 17:45:55,401 (0, orderItemId           2279856360
+cancelRequest              False
+orderId               2464511120
+Courier          GLS Normalpaket
+track               352559699693
+Name: 0, dtype: object)
+2019-08-06 17:45:55,406 Send trackingdata to orderId: 2464511120
+2019-08-06 17:45:56,410 (1, orderItemId           2279735341
+cancelRequest              False
+orderId               2464082890
+Courier          GLS Normalpaket
+track               352559699808
+Name: 1, dtype: object)
+2019-08-06 17:45:56,424 Send trackingdata to orderId: 2464082890
+2019-08-06 17:45:57,429 127.0.0.1 - - [06/Aug/2019 17:45:57] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:46:19,440  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-08-06 17:46:19,519  * Restarting with stat
+2019-08-06 17:46:20,510 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:46:20,747 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:46:20,752 [Success] Bearer token obtained
+2019-08-06 17:46:22,874 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:46:23,268 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:46:23,269 [Success] Bearer token obtained
+2019-08-06 17:46:23,652 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:46:23,881 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:46:23,884 [Success] Bearer token obtained
+2019-08-06 17:46:25,507 [PUT] Adding transport information with
+2019-08-06 17:46:25,508   orderItemId cancelRequest     orderId Courier         track
+0  2279856360         False  2464511120     GLS  352559699693
+1  2279735341         False  2464082890     GLS  352559699808
+2019-08-06 17:46:25,530 (0, orderItemId        2279856360
+cancelRequest           False
+orderId            2464511120
+Courier                   GLS
+track            352559699693
+Name: 0, dtype: object)
+2019-08-06 17:46:25,536 Send trackingdata to orderId: 2464511120
+2019-08-06 17:46:26,541 (1, orderItemId        2279735341
+cancelRequest           False
+orderId            2464082890
+Courier                   GLS
+track            352559699808
+Name: 1, dtype: object)
+2019-08-06 17:46:26,553 Send trackingdata to orderId: 2464082890
+2019-08-06 17:46:27,557 127.0.0.1 - - [06/Aug/2019 17:46:27] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:46:35,410  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:46:35,472  * Restarting with stat
+2019-08-06 17:46:36,399 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:46:36,624 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:46:36,630 [Success] Bearer token obtained
+2019-08-06 17:47:28,774  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:47:28,836  * Restarting with stat
+2019-08-06 17:47:29,810 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:47:29,987 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:47:29,989 [Success] Bearer token obtained
+2019-08-06 17:47:35,845 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:47:36,120 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:47:36,121 [Success] Bearer token obtained
+2019-08-06 17:47:36,595 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:47:36,784 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:47:36,810 [Success] Bearer token obtained
+2019-08-06 17:47:42,497 127.0.0.1 - - [06/Aug/2019 17:47:42] "GET / HTTP/1.1" 200 -
+2019-08-06 17:47:47,036 [PUT] Adding transport information with
+2019-08-06 17:47:47,036   orderItemId cancelRequest     orderId Courier         track
+0  2279856360         False  2464511120     GLS  352559699693
+1  2279735341         False  2464082890     GLS  352559699808
+2019-08-06 17:47:47,044 (0, orderItemId        2279856360
+cancelRequest           False
+orderId            2464511120
+Courier                   GLS
+track            352559699693
+Name: 0, dtype: object)
+2019-08-06 17:47:47,049 Send trackingdata to orderId: 2464511120
+2019-08-06 17:47:47,051 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:47:47,294 https://api.bol.com:443 "PUT /retailer/orders/2279856360/shipment HTTP/1.1" 202 None
+2019-08-06 17:47:47,363 {"id":342490947,"entityId":"2279856360","eventType":"CONFIRM_SHIPMENT","description":"Confirm shipment for order item 2279856360.","status":"PENDING","createTimestamp":"2019-08-06T17:47:47.513+02:00","links":[{"rel":"self","href":"https://api.bol.com/retailer/process-status/342490947","method":"GET"}]}
+2019-08-06 17:47:48,366 (1, orderItemId        2279735341
+cancelRequest           False
+orderId            2464082890
+Courier                   GLS
+track            352559699808
+Name: 1, dtype: object)
+2019-08-06 17:47:48,372 Send trackingdata to orderId: 2464082890
+2019-08-06 17:47:48,374 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:47:48,508 https://api.bol.com:443 "PUT /retailer/orders/2279735341/shipment HTTP/1.1" 202 252
+2019-08-06 17:47:48,519 {"id":342491015,"entityId":"2279735341","eventType":"CONFIRM_SHIPMENT","description":"Confirm shipment for order item 2279735341.","status":"PENDING","createTimestamp":"2019-08-06T17:47:48.718+02:00","links":[{"rel":"self","href":"https://api.bol.com/retailer/process-status/342491015","method":"GET"}]}
+2019-08-06 17:47:49,519 127.0.0.1 - - [06/Aug/2019 17:47:49] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:48:59,260  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:48:59,319  * Restarting with stat
+2019-08-06 17:49:00,262 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:49:00,489 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:49:00,489 [Success] Bearer token obtained
+2019-08-06 17:49:19,129 <generator object DataFrame.iterrows at 0x0DD60E30>
+2019-08-06 17:49:20,122 Found 13 matching Ids
+2019-08-06 17:49:20,125     orderItemId cancelRequest     orderId          Courier           track
+327  2279856360         False  2464511120  GLS Normalpaket    352559699693
+332  2279735341         False  2464082890  GLS Normalpaket    352559699808
+342  2279588377         False  2463615510      DPD Predict  01345057490411
+345  2279525247         False  2444460400  GLS Normalpaket    352559699792
+364  2279176231         False  2462253530      DPD Predict  01345057490412
+366  2279120677         False  2462066860  GLS Normalpaket   0352559699778
+368  2279074263         False  2461904660      DPD Predict  01345057490479
+370  2279058238         False  2461830790      DPD Predict  01345057490428
+381  2278810248         False  2461053960      DPD Predict  01345057490427
+404  2277958168         False  2458925320      DPD Predict  01345057490426
+412  2277631186         False  2458190490      DPD Predict  01345057490424
+416  2277302911         False  2457485420      DPD Predict  01345057490420
+422  2276766049         False  2456329860      DPD Predict  01345057490421
+2019-08-06 17:49:20,167 127.0.0.1 - - [06/Aug/2019 17:49:20] "POST /uploader HTTP/1.1" 200 -
+2019-08-06 17:51:10,604 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:51:10,810 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:51:10,816 [Success] Bearer token obtained
+2019-08-06 17:51:10,822 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:51:11,059 https://api.bol.com:443 "GET /retailer/orders/2450989450 HTTP/1.1" 404 164
+2019-08-06 17:51:11,061 127.0.0.1 - - [06/Aug/2019 17:51:11] "POST /bol HTTP/1.1" 200 -
+2019-08-06 17:53:15,704 127.0.0.1 - - [06/Aug/2019 17:53:15] "GET / HTTP/1.1" 200 -
+2019-08-06 17:53:45,742 <generator object DataFrame.iterrows at 0x0DDF35F0>
+2019-08-06 17:53:46,737 Found 13 matching Ids
+2019-08-06 17:53:46,742     orderItemId cancelRequest     orderId          Courier           track
+327  2279856360         False  2464511120  GLS Normalpaket    352559699693
+332  2279735341         False  2464082890  GLS Normalpaket    352559699808
+342  2279588377         False  2463615510      DPD Predict  01345057490411
+345  2279525247         False  2444460400  GLS Normalpaket    352559699792
+364  2279176231         False  2462253530      DPD Predict  01345057490412
+366  2279120677         False  2462066860  GLS Normalpaket   0352559699778
+368  2279074263         False  2461904660      DPD Predict  01345057490479
+370  2279058238         False  2461830790      DPD Predict  01345057490428
+381  2278810248         False  2461053960      DPD Predict  01345057490427
+404  2277958168         False  2458925320      DPD Predict  01345057490426
+412  2277631186         False  2458190490      DPD Predict  01345057490424
+416  2277302911         False  2457485420      DPD Predict  01345057490420
+422  2276766049         False  2456329860      DPD Predict  01345057490421
+2019-08-06 17:53:46,774 127.0.0.1 - - [06/Aug/2019 17:53:46] "POST /uploader HTTP/1.1" 200 -
+2019-08-06 17:54:12,735 [PUT] Adding transport information with
+2019-08-06 17:54:12,735   orderItemId cancelRequest     orderId Courier         track
+0  2279856360         False  2464511120     GLS  352559699693
+1  2279735341         False  2464082890     GLS  352559699808
+2019-08-06 17:54:12,743 (0, orderItemId        2279856360
+cancelRequest           False
+orderId            2464511120
+Courier                   GLS
+track            352559699693
+Name: 0, dtype: object)
+2019-08-06 17:54:12,747 Send trackingdata to orderId: 2464511120
+2019-08-06 17:54:12,756 127.0.0.1 - - [06/Aug/2019 17:54:12] "GET /put HTTP/1.1" 500 -
+2019-08-06 17:54:12,987 127.0.0.1 - - [06/Aug/2019 17:54:12] "GET /put?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-08-06 17:54:13,074 127.0.0.1 - - [06/Aug/2019 17:54:13] "GET /put?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-08-06 17:54:13,075 127.0.0.1 - - [06/Aug/2019 17:54:13] "GET /put?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-08-06 17:54:13,162 127.0.0.1 - - [06/Aug/2019 17:54:13] "GET /put?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-08-06 17:54:13,472 127.0.0.1 - - [06/Aug/2019 17:54:13] "GET /put?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-08-06 17:54:13,722 127.0.0.1 - - [06/Aug/2019 17:54:13] "GET /put?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-08-06 17:54:19,171  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:54:19,242  * Restarting with stat
+2019-08-06 17:54:21,310 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:54:21,604 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:54:21,608 [Success] Bearer token obtained
+2019-08-06 17:54:24,145 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:54:24,329 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:54:24,332 [Success] Bearer token obtained
+2019-08-06 17:54:24,931 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:54:25,116 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:54:25,120 [Success] Bearer token obtained
+2019-08-06 17:54:34,506 127.0.0.1 - - [06/Aug/2019 17:54:34] "GET / HTTP/1.1" 200 -
+2019-08-06 17:54:37,862 <generator object DataFrame.iterrows at 0x0D84F030>
+2019-08-06 17:54:38,819 Found 13 matching Ids
+2019-08-06 17:54:38,824     orderItemId cancelRequest     orderId          Courier           track
+327  2279856360         False  2464511120  GLS Normalpaket    352559699693
+332  2279735341         False  2464082890  GLS Normalpaket    352559699808
+342  2279588377         False  2463615510      DPD Predict  01345057490411
+345  2279525247         False  2444460400  GLS Normalpaket    352559699792
+364  2279176231         False  2462253530      DPD Predict  01345057490412
+366  2279120677         False  2462066860  GLS Normalpaket   0352559699778
+368  2279074263         False  2461904660      DPD Predict  01345057490479
+370  2279058238         False  2461830790      DPD Predict  01345057490428
+381  2278810248         False  2461053960      DPD Predict  01345057490427
+404  2277958168         False  2458925320      DPD Predict  01345057490426
+412  2277631186         False  2458190490      DPD Predict  01345057490424
+416  2277302911         False  2457485420      DPD Predict  01345057490420
+422  2276766049         False  2456329860      DPD Predict  01345057490421
+2019-08-06 17:54:38,860 127.0.0.1 - - [06/Aug/2019 17:54:38] "POST /uploader HTTP/1.1" 200 -
+2019-08-06 17:54:41,037 [PUT] Adding transport information with
+2019-08-06 17:54:41,037   orderItemId cancelRequest     orderId Courier         track
+0  2279856360         False  2464511120     GLS  352559699693
+1  2279735341         False  2464082890     GLS  352559699808
+2019-08-06 17:54:41,046 (0, orderItemId        2279856360
+cancelRequest           False
+orderId            2464511120
+Courier                   GLS
+track            352559699693
+Name: 0, dtype: object)
+2019-08-06 17:54:41,050 Send trackingdata to orderId: 2464511120
+2019-08-06 17:54:41,052 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:54:41,289 https://api.bol.com:443 "PUT /retailer/orders/2279856360/shipment HTTP/1.1" 202 None
+2019-08-06 17:54:41,363 {"id":342515370,"entityId":"2279856360","eventType":"CONFIRM_SHIPMENT","description":"Confirm shipment for order item 2279856360.","status":"PENDING","createTimestamp":"2019-08-06T17:54:41.512+02:00","links":[{"rel":"self","href":"https://api.bol.com/retailer/process-status/342515370","method":"GET"}]}
+2019-08-06 17:54:42,368 (1, orderItemId        2279735341
+cancelRequest           False
+orderId            2464082890
+Courier                   GLS
+track            352559699808
+Name: 1, dtype: object)
+2019-08-06 17:54:42,382 Send trackingdata to orderId: 2464082890
+2019-08-06 17:54:42,387 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:54:42,522 https://api.bol.com:443 "PUT /retailer/orders/2279735341/shipment HTTP/1.1" 202 None
+2019-08-06 17:54:42,596 {"id":342515438,"entityId":"2279735341","eventType":"CONFIRM_SHIPMENT","description":"Confirm shipment for order item 2279735341.","status":"PENDING","createTimestamp":"2019-08-06T17:54:42.746+02:00","links":[{"rel":"self","href":"https://api.bol.com/retailer/process-status/342515438","method":"GET"}]}
+2019-08-06 17:54:43,600 127.0.0.1 - - [06/Aug/2019 17:54:43] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:56:15,697 <generator object DataFrame.iterrows at 0x0D84F770>
+2019-08-06 17:56:16,707 Found 13 matching Ids
+2019-08-06 17:56:16,710     orderItemId cancelRequest     orderId          Courier           track
+327  2279856360         False  2464511120  GLS Normalpaket    352559699693
+332  2279735341         False  2464082890  GLS Normalpaket    352559699808
+342  2279588377         False  2463615510      DPD Predict  01345057490411
+345  2279525247         False  2444460400  GLS Normalpaket    352559699792
+364  2279176231         False  2462253530      DPD Predict  01345057490412
+366  2279120677         False  2462066860  GLS Normalpaket   0352559699778
+368  2279074263         False  2461904660      DPD Predict  01345057490479
+370  2279058238         False  2461830790      DPD Predict  01345057490428
+381  2278810248         False  2461053960      DPD Predict  01345057490427
+404  2277958168         False  2458925320      DPD Predict  01345057490426
+412  2277631186         False  2458190490      DPD Predict  01345057490424
+416  2277302911         False  2457485420      DPD Predict  01345057490420
+422  2276766049         False  2456329860      DPD Predict  01345057490421
+2019-08-06 17:56:16,742 127.0.0.1 - - [06/Aug/2019 17:56:16] "POST /uploader HTTP/1.1" 200 -
+2019-08-06 17:57:22,461 [PUT] Adding transport information with
+2019-08-06 17:57:22,461   orderItemId cancelRequest     orderId Courier          track
+0  2279525247         False  2444460400     GLS   352559699792
+1  2279120677         False  2462066860     GLS  0352559699778
+2019-08-06 17:57:22,476 (0, orderItemId        2279525247
+cancelRequest           False
+orderId            2444460400
+Courier                   GLS
+track            352559699792
+Name: 0, dtype: object)
+2019-08-06 17:57:22,481 Send trackingdata to orderId: 2444460400
+2019-08-06 17:57:22,483 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:57:22,769 https://api.bol.com:443 "PUT /retailer/orders/2279525247/shipment HTTP/1.1" 202 None
+2019-08-06 17:57:22,847 {"id":342525875,"entityId":"2279525247","eventType":"CONFIRM_SHIPMENT","description":"Confirm shipment for order item 2279525247.","status":"PENDING","createTimestamp":"2019-08-06T17:57:22.994+02:00","links":[{"rel":"self","href":"https://api.bol.com/retailer/process-status/342525875","method":"GET"}]}
+2019-08-06 17:57:23,850 (1, orderItemId         2279120677
+cancelRequest            False
+orderId             2462066860
+Courier                    GLS
+track            0352559699778
+Name: 1, dtype: object)
+2019-08-06 17:57:23,857 Send trackingdata to orderId: 2462066860
+2019-08-06 17:57:23,861 Starting new HTTPS connection (1): api.bol.com:443
+2019-08-06 17:57:24,025 https://api.bol.com:443 "PUT /retailer/orders/2279120677/shipment HTTP/1.1" 202 251
+2019-08-06 17:57:24,039 {"id":342525983,"entityId":"2279120677","eventType":"CONFIRM_SHIPMENT","description":"Confirm shipment for order item 2279120677.","status":"PENDING","createTimestamp":"2019-08-06T17:57:24.239+02:00","links":[{"rel":"self","href":"https://api.bol.com/retailer/process-status/342525983","method":"GET"}]}
+2019-08-06 17:57:25,043 127.0.0.1 - - [06/Aug/2019 17:57:25] "GET /put HTTP/1.1" 200 -
+2019-08-06 17:58:25,233  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:58:25,296  * Restarting with stat
+2019-08-06 17:58:26,250 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:58:26,504 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:58:26,510 [Success] Bearer token obtained
+2019-08-06 17:58:29,383  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:58:29,442  * Restarting with stat
+2019-08-06 17:58:30,395 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:58:31,035 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:58:31,037 [Success] Bearer token obtained
+2019-08-06 17:58:32,463  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:58:32,523  * Restarting with stat
+2019-08-06 17:58:33,554 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:58:33,741 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:58:33,744 [Success] Bearer token obtained
+2019-08-06 17:58:35,616  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:58:35,674  * Restarting with stat
+2019-08-06 17:58:36,629 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:58:36,815 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:58:36,821 [Success] Bearer token obtained
+2019-08-06 17:58:39,754  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\backend\\BolHandler.py', reloading
+2019-08-06 17:58:39,813  * Restarting with stat
+2019-08-06 17:58:40,759 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:58:40,966 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:58:40,970 [Success] Bearer token obtained
+2019-08-06 17:58:46,647 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:58:47,385 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:58:47,647 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:58:47,654 [Success] Bearer token obtained
+2019-08-06 17:58:48,001 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:58:48,003 [Success] Bearer token obtained
+2019-08-06 17:59:23,703 127.0.0.1 - - [06/Aug/2019 17:59:23] "POST /uploader HTTP/1.1" 500 -
+2019-08-06 17:59:23,875 127.0.0.1 - - [06/Aug/2019 17:59:23] "GET /uploader?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-08-06 17:59:24,029 127.0.0.1 - - [06/Aug/2019 17:59:24] "GET /uploader?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-08-06 17:59:24,033 127.0.0.1 - - [06/Aug/2019 17:59:24] "GET /uploader?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-08-06 17:59:24,112 127.0.0.1 - - [06/Aug/2019 17:59:24] "GET /uploader?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-08-06 17:59:24,423 127.0.0.1 - - [06/Aug/2019 17:59:24] "GET /uploader?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-08-06 17:59:24,670 127.0.0.1 - - [06/Aug/2019 17:59:24] "GET /uploader?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-08-06 17:59:39,911  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-08-06 17:59:39,980  * Restarting with stat
+2019-08-06 17:59:40,996 Starting new HTTPS connection (1): login.bol.com:443
+2019-08-06 17:59:41,618 https://login.bol.com:443 "POST /token?grant_type=client_credentials HTTP/1.1" 200 None
+2019-08-06 17:59:41,640 [Success] Bearer token obtained
+2019-08-06 17:59:44,094  * Detected change in 'C:\\Users\\Mister Sandman\\Desktop\\Tasks\\bolcom track\\server\\api\\app.py', reloading
+2019-08-06 17:59:44,161  * Restarting with stat
