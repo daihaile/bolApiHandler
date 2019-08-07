@@ -85,23 +85,25 @@ def upload_files():
             ordersFile.save(os.path.join(app.config['UPLOAD_FOLDER'], orders_filename))
             tracking_path = app.config['UPLOAD_FOLDER'] + "\\" + tracking_filename
             orders_path = app.config['UPLOAD_FOLDER'] + "\\" + orders_filename
-            print(tracking_path)
-            print(orders_path)
 
             # Read Tracking csv file
             trackDF = excelHandler.read_tracking_csv(tracking_path)
-            print(trackDF)
-            print(trackDF.iloc[0,:])
+
             
             # get orders from /orders/ for orderItemIds
             #ordersRaw = bolHandler.get_orders()
             #orderItemIdDF = excelHandler.save_orders_to_csv(ordersRaw)
+            orders = pd.read_csv(r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\orders.csv", dtype=str, usecols=[
+                'orderId', 'orderItemId', 'cancelRequest'])
+
 
             # Read Orders Excel file for countryCode
-            ordersDF = excelHandler.read_order_excel(orders_path)
-            
-            orders = pd.read_csv(r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\orders.csv", dtype=str, usecols=[
-                                 'orderId', 'orderItemId', 'cancelRequest'])
+            countryDF = excelHandler.read_order_excel(orders_path)
+
+            # Adding countryCode to TrackDF
+            updatedDF = addCountryCode(trackDF,countryDF)
+            print(updatedDF)
+
             # print("got orders, merging")
             # mergedDF = mergeDF(orders, trackDF)
             # mergedDF= mergedDF.dropna()
@@ -116,7 +118,11 @@ def upload_files():
 
 
 
-def addCountryCode(mergedDF, countryCodeDF):
+def addCountryCode(trackDF, countryDF):
+    print("TrackingDF")
+    print(trackDF)
+    print(countryDF)
+
     return None
 
 def mergeDF(ordersDF, tatDF):

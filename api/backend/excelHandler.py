@@ -33,8 +33,12 @@ class ExcelHandler():
                            dtype=str,
                            header=2,
                            usecols=u_cols,
-                           encoding='utf-8'
+                           encoding='utf-8',
+                           na_values=['NA'],
                            )
+
+        #df.rename(columns={"bestelnummer":"orderId","land_verzending":"countryCode"})
+
         df = df.replace(regex=r'^Belgi.$', value="BE")
         df = df.replace(regex=r'Nederland', value="NL")
         return df
@@ -50,7 +54,13 @@ class ExcelHandler():
                          usecols=u_cols,
                          names=['orderId','Courier','Tracking Reference'],
                          dtype=str)
-        return df
+        
+        df = df[df['orderId'].str.startswith('2',na=False)]
+        print(df['Courier'])
+        df = df[df['Courier'].str.startswith(('DPD Predict','GLS Normalpaket'),na=False)]
+        #df = df[df['Courier'].str.startswith('GLS Normalpaket',na=False)]
+        #print(df['Courier'])
+        return df.dropna()
 
         # return self.filter_dataframe(df,courier="DPD Predict")
 
