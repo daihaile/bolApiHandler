@@ -40,9 +40,12 @@ api.add_resource(Landing, '/landing',
 @app.route('/')
 def test():
     #orders = bolHandler.get_orders()
-
-    # excelHandler.save_orders_to_csv(orders)
-    return render_template('index.html', message="saved orders to csv file")
+    #print(orders)
+    #ordersDF = pd.DataFrame.from_dict(orders['orders'])
+    #ordersDF.to_csv('rawOrders.csv')
+    #excelHandler.save_orders_to_csv(orders)
+    
+    return render_template('index.html', message="UPLOAD 2 FILES")
 
 
 @app.route('/bol', methods=['GET', 'POST'])
@@ -63,61 +66,58 @@ def putBol():
     return df.to_json()
 
 @app.route('/uploader', methods=['GET', 'POST'])
-def upload_file():
+def upload_files():
     if request.method == 'POST':
-        file = request.files['file']
-        if 'file' not in request.files:
-            print("No file part")
+        trackingFile = request.files['trackingFile']
+        ordersFile = request.files['ordersFile']
+        if 'trackingFile' not in request.files or 'ordersFile' not in request.files:
+            print("No files")
+            return render_template('index.html', message="no trackingFile")
+
+        if trackingFile.filename == '':
             return render_template('index.html', message="no file")
 
-        if file.filename == '':
-            return render_template('index.html', message="no file")
-
-        if file:
+        if trackingFile and ordersFile:
             # get dataframe from CSV Upload
-            filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            path = app.config['UPLOAD_FOLDER'] + "\\" + filename
-            print(path)
+            tracking_filename = secure_filename(trackingFile.filename)
+            orders_filename = secure_filename(ordersFile.filename)
+            trackingFile.save(os.path.join(app.config['UPLOAD_FOLDER'], tracking_filename))
+            ordersFile.save(os.path.join(app.config['UPLOAD_FOLDER'], orders_filename))
+            tracking_path = app.config['UPLOAD_FOLDER'] + "\\" + tracking_filename
+            orders_path = app.config['UPLOAD_FOLDER'] + "\\" + orders_filename
+            print(tracking_path)
+            print(orders_path)
 
-            df = excelHandler.read_tracking_csv(path)
-            df.rename(
-                columns={'Client Order Reference': 'orderId'}, inplace=True)
+            # Read Tracking csv file
+            trackDF = excelHandler.read_tracking_csv(tracking_path)
+            print(trackDF)
+            print(trackDF.iloc[0,:])
+            
+            # get orders from /orders/ for orderItemIds
+            #ordersRaw = bolHandler.get_orders()
+            #orderItemIdDF = excelHandler.save_orders_to_csv(ordersRaw)
 
-            ordersRaw = bolHandler.get_orders()
-            orders = excelHandler.save_orders_to_csv(ordersRaw)
-            excelHandler.save_orders_to_excel(ordersRaw)
-            #orders = pd.read_csv(r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\orders.csv", dtype=str, usecols=[
-            #                     'orderId', 'orderItemId', 'cancelRequest'])
-
-            # filter Dataframe with bol API get /orders/
-            #  filter_df(orders, df)
-            mergedDF = mergeDF(orders, df)
-            print(mergedDF.dropna())
-            # return html_from_df
-            excelHandler.save_to_csv(mergedDF, 'merged')
-
-            return render_template('index.html', tables=[mergedDF.to_html(classes='data')], titles=df.columns.values, message='got csv')
-
+            # Read Orders Excel file for countryCode
+            ordersDF = excelHandler.read_order_excel(orders_path)
+            
+            orders = pd.read_csv(r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\orders.csv", dtype=str, usecols=[
+                                 'orderId', 'orderItemId', 'cancelRequest'])
+            # print("got orders, merging")
+            # mergedDF = mergeDF(orders, trackDF)
+            # mergedDF= mergedDF.dropna()
+            # print(mergedDF)
+            # excelHandler.save_to_csv(mergedDF, 'merged')
+            return "test"
+            #return render_template('index.html', tables=[mergedDF.to_html(classes='data')], titles=df.columns.values, message='got csv')
+            
         else:
             return "errrooooororrrrs"
 
 
-def filter_df(orders, tat_df):
 
-    logging.info("GOT ORDERS")
 
-    # ADD TRACKING TO OBJECTS
-    dup_df = tat_df[tat_df.duplicated()]
-
-    order_DF = excelHandler.save_orders_to_excel(orders)
-    order_DF.drop(['ean', 'cancelRequest', 'quantity', 'dateTimeOrderPlaced'],
-                  axis=1, inplace=True)
-    logging.info("SAVING ORDERS")
-
-    #mergedDF = pd.merge(tat_df,order_DF,on=['Client Order Reference'],how='right')
-    # print(mergedDF
-
+def addCountryCode(mergedDF, countryCodeDF):
+    return None
 
 def mergeDF(ordersDF, tatDF):
     ordersDF.loc[:, 'Courier'] = None
@@ -135,10 +135,16 @@ def mergeDF(ordersDF, tatDF):
     print(ordersDF)
 
     for index, row in ordersDF2.iterrows():
-        #print(index, " - checking for orderId: ", row.orderId)
+        print(index, " - checking for orderId: ", row.orderId)
         for tat in tatDF2.iterrows():
             # iterate over tracking list
             #logging.info("Comparing {} {}".format(str(row.orderId),tat[1]['orderId']))
+            
+            #print(row.orderId, tat[1]['orderId'])
+            print(tat)
+            break
+
+
             if(row.orderId == tat[1]['orderId']):
                 if(row.cancelRequest == 'True'):
                     print("cancel request on {}, dropping order".format(row.orderId))

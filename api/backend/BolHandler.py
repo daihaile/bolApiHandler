@@ -37,7 +37,7 @@ class BolHandler():
             else:
                 logging.exception("[Fail] " + response.json())
         except requests.RequestException as e:
-            logging.exception("[FAil] " + e)
+            logging.exception(e)
         return None
 
 
@@ -63,9 +63,25 @@ class BolHandler():
             query = {"page":str(page)}
             r = requests.get(self.URL + url, headers=header, params= query)
             res = r.json()
+            print(r.status_code)
             if(len(res) > 0):
-                logging.info("ADDED ANOTHER PAGE")
-                orderDict['orders'].extend(res['orders'])
+
+                if(r.status_code == 429):
+                    logging.warning(r.status_code)
+                    page = page-1
+                    logging.info("resetting page number to try again: Page " + str(page))
+                    retry = 301
+                    retry = r.headers['Retry-After']
+                    logging.warning("retrying GET request in: " + retry)
+                    time.sleep(int(retry) + 5)
+
+                elif(r.status_code == 200):
+                    print("status code ok, adding another page. Remaining requests: ")
+                    print(str(r.headers['X-RateLimit-Remaining']))
+                    logging.info("ADDED ANOTHER PAGE")
+                    logging.info(r.headers)
+                    orderDict['orders'].extend(res['orders'])
+
         print("got " + str(len(orderDict['orders'])) + " orders")
         return orderDict
     '''
