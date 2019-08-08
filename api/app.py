@@ -60,10 +60,9 @@ def get_from_bol():
 def putBol():
     mergedDF = pd.read_csv(
         r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\merged.csv", dtype=str) 
-    mergedDF.replace('GLS Normalpaket','GLS', inplace=True)
     df = bolHandler.put_trackin_to_orderId(mergedDF)
     
-    return df.to_json()
+    return render_template('index.html', uploaded_tables=[mergedDF.to_html(classes='data')], uploaded_titles=mergedDF.columns.values, message='UPLOADED')
 
 @app.route('/uploader', methods=['GET', 'POST'])
 def upload_files():
@@ -105,13 +104,6 @@ def upload_files():
 
             # Adding countryCode to TrackDF
             orderIdwithCountryDF = addCountryCode(orders,countryDF)
-
-            #print(updatedDF)
-            # print("orders")
-            # print(orders)
-            # print()
-            # print("trackDF")
-            # print(trackDF.head(5))
 
             print("got orders, merging")
             mergedDF = mergeDF(orderIdwithCountryDF, trackDF)
@@ -161,8 +153,10 @@ def mergeDF(ordersDF, tatDF):
                 count = count+1
                 if(tat[1]['used'] == False):
                     print("free trackingnumber ",
-                          tat[1].orderId, tat[1]['Tracking Reference'], "setting used=True")
-                    ordersDF.at[index, 'Courier'] = tat[1]['Courier']
+                          tat[1].orderId, tat[1]['Tracking Reference'], " - setting used=True")
+                    #ordersDF.at[index, 'Courier'] = tat[1]['Courier']
+                    print("converting ", row.countryCode, tat[1]['Courier'])
+                    ordersDF.at[index, 'Courier'] = convertCourier(row.countryCode,tat[1]['Courier'])
                     ordersDF.at[index, 'track'] = tat[1]['Tracking Reference']
                     tatDF.at[tat[0], 'used'] = True
                     break  # break out of tat loop

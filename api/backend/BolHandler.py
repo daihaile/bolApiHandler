@@ -182,7 +182,6 @@ class BolHandler():
             print("Send trackingdata to orderId: "+ str(row[1]['orderId']))
             logging.info(row)
             url = self.URL + "/orders/" + row[1]['orderItemId'] + "/shipment"
-            print(url)
             data = {
                 "shipmentReference": "",
                 "transport": {
@@ -197,6 +196,7 @@ class BolHandler():
             #pp.pprint(r.text)
             #logging.warning(r.text)
             time.sleep(1)
+            print("Simulated put request to",url,"with",data)
             print()
         
         return mergedDF

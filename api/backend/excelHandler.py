@@ -57,10 +57,8 @@ class ExcelHandler():
         
         df = df[df['orderId'].str.contains(r'^2[0-9]{1,9}$',na=False)]
         df = df[df['Courier'].str.startswith(('DPD','GLS'),na=False)]
-        df = df.replace(regex=r'GLS Paket OVL Berlin', value="GLS")
+        df = df.replace(regex=r'(GLS Paket OVL Berlin|GLS Normalpaket)', value="GLS")
         df = df.replace(regex=r'DPD Predict', value="DPD")
-
-
         return df.dropna()
 
 
@@ -100,6 +98,9 @@ class ExcelHandler():
         return df
 
     def save_to_csv(self, data, name):
+        if os.path.isfile(name + '.csv'):
+            os.remove(name+'.csv')
+            data.to_csv(str(name) + '.csv', index=False)
         if not os.path.isfile(str(name) + '.csv'):
             print("Saved file:" + name)
             data.to_csv(str(name) + '.csv', index=False)
