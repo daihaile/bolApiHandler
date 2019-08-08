@@ -42,7 +42,6 @@ class BolHandler():
 
 
     def get_orders(self):
-        self.get_bearer_token()
         orderDict = {}
         url = "/orders"
         auth = "Bearer " + self.BEARER_TOKEN
@@ -97,7 +96,6 @@ class BolHandler():
     '''
 
     def get_from_bol(self, path):
-        self.get_bearer_token()
         auth = "Bearer " + self.BEARER_TOKEN
         header = {
             'Accept': 'application/vnd.retailer.v3+json',
@@ -113,7 +111,6 @@ class BolHandler():
         if(is_number(id)):
             id = str(id)
         url = self.URL + "/orders/" + str(id)
-        self.get_bearer_token()
         auth = "Bearer " + self.BEARER_TOKEN
         header = {
             'Accept': 'application/vnd.retailer.v3+json',
