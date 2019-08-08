@@ -55,14 +55,14 @@ class ExcelHandler():
                          names=['orderId','Courier','Tracking Reference'],
                          dtype=str)
         
-        df = df[df['orderId'].str.startswith('2',na=False)]
-        print(df['Courier'])
-        df = df[df['Courier'].str.startswith(('DPD Predict','GLS Normalpaket'),na=False)]
-        #df = df[df['Courier'].str.startswith('GLS Normalpaket',na=False)]
-        #print(df['Courier'])
+        df = df[df['orderId'].str.contains(r'^2[0-9]{1,9}$',na=False)]
+        df = df[df['Courier'].str.startswith(('DPD','GLS'),na=False)]
+        df = df.replace(regex=r'GLS Paket OVL Berlin', value="GLS")
+        df = df.replace(regex=r'DPD Predict', value="DPD")
+
+
         return df.dropna()
 
-        # return self.filter_dataframe(df,courier="DPD Predict")
 
     def read_excel(self, filename):
         print(filename)
@@ -101,6 +101,7 @@ class ExcelHandler():
 
     def save_to_csv(self, data, name):
         if not os.path.isfile(str(name) + '.csv'):
+            print("Saved file:" + name)
             data.to_csv(str(name) + '.csv', index=False)
 
     def processTrackingCSV(self, data):

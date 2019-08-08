@@ -212,10 +212,7 @@ def is_number(s):
     except ValueError:
         return False
 
-#pp.pprint(orders)
-#print(len(orders['orders']))
-#bol.put_trackin_to_orderId("2445845650","GLS","1345057486531")
-#bol.put_trackin_to_orderId("2444844710","DPD","01345057485995")
+
 
 
 #bol = BolHandler()

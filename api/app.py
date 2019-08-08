@@ -91,8 +91,11 @@ def upload_files():
 
             
             # get orders from /orders/ for orderItemIds
-            #ordersRaw = bolHandler.get_orders()
-            #orderItemIdDF = excelHandler.save_orders_to_csv(ordersRaw)
+            # ordersRaw = bolHandler.get_orders()
+            # orderItemIdDF = excelHandler.save_orders_to_csv(ordersRaw)
+            # orders= orderItemIdDF
+
+
             orders = pd.read_csv(r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\orders.csv", dtype=str, usecols=[
                 'orderId', 'orderItemId', 'cancelRequest'])
 
@@ -101,16 +104,22 @@ def upload_files():
             countryDF = excelHandler.read_order_excel(orders_path)
 
             # Adding countryCode to TrackDF
-            updatedDF = addCountryCode(trackDF,countryDF)
-            print(updatedDF)
+            orderIdwithCountryDF = addCountryCode(orders,countryDF)
 
-            # print("got orders, merging")
-            # mergedDF = mergeDF(orders, trackDF)
-            # mergedDF= mergedDF.dropna()
-            # print(mergedDF)
-            # excelHandler.save_to_csv(mergedDF, 'merged')
-            return "test"
-            #return render_template('index.html', tables=[mergedDF.to_html(classes='data')], titles=df.columns.values, message='got csv')
+            #print(updatedDF)
+            # print("orders")
+            # print(orders)
+            # print()
+            # print("trackDF")
+            # print(trackDF.head(5))
+
+            print("got orders, merging")
+            mergedDF = mergeDF(orderIdwithCountryDF, trackDF)
+            mergedDF= mergedDF.dropna()
+            print("Merged Dataframe with countryCode")
+            print(mergedDF)
+            excelHandler.save_to_csv(mergedDF, 'merged')
+            return render_template('index.html', tables=[mergedDF.to_html(classes='data')], titles=mergedDF.columns.values, message='got csv')
             
         else:
             return "errrooooororrrrs"
@@ -118,12 +127,11 @@ def upload_files():
 
 
 
-def addCountryCode(trackDF, countryDF):
-    print("TrackingDF")
-    print(trackDF)
-    print(countryDF)
-
-    return None
+def addCountryCode(ordersDF, countryDF):
+    #print(trackDF)
+    countryDF.rename(columns={"bestelnummer":"orderId","land_verzending":"countryCode"},inplace=True)
+    result = pd.merge(ordersDF,countryDF, on='orderId')
+    return result
 
 def mergeDF(ordersDF, tatDF):
     ordersDF.loc[:, 'Courier'] = None
@@ -137,28 +145,23 @@ def mergeDF(ordersDF, tatDF):
     logging.info(tatDF2.iterrows())
     count = 0
 
-    print("starting DF")
-    print(ordersDF)
+    #print("starting DF")
+    #print(ordersDF)
 
     for index, row in ordersDF2.iterrows():
-        print(index, " - checking for orderId: ", row.orderId)
+        #print(index, " - checking for orderId: ", row.orderId)
         for tat in tatDF2.iterrows():
             # iterate over tracking list
-            #logging.info("Comparing {} {}".format(str(row.orderId),tat[1]['orderId']))
-            
-            #print(row.orderId, tat[1]['orderId'])
-            print(tat)
-            break
-
 
             if(row.orderId == tat[1]['orderId']):
-                if(row.cancelRequest == 'True'):
+                print("[Match]")
+                if(row.cancelRequest == 'True' or row.cancelRequest == 'true'):
                     print("cancel request on {}, dropping order".format(row.orderId))
                     break
                 count = count+1
                 if(tat[1]['used'] == False):
                     print("free trackingnumber ",
-                          tat[1].orderId, tat[1]['Tracking Reference'])
+                          tat[1].orderId, tat[1]['Tracking Reference'], "setting used=True")
                     ordersDF.at[index, 'Courier'] = tat[1]['Courier']
                     ordersDF.at[index, 'track'] = tat[1]['Tracking Reference']
                     tatDF.at[tat[0], 'used'] = True
@@ -172,13 +175,19 @@ def mergeDF(ordersDF, tatDF):
     print()
     ordersDF.fillna(value=pd.np.nan, inplace=True)
     ordersDF.dropna(inplace=True)
-    print("FINAL DATAFRAME")
     logging.info(ordersDF)
-    print()
-
-    print("Tracking Dataframe")
-    print(tatDF)
     return ordersDF
+
+
+def convertCourier(countryCode,courier):
+    if(countryCode == 'BE' and courier == 'DPD'):
+        return 'DPD-BE'
+    elif(countryCode == 'NL' and courier == 'DPD'):
+        return 'DPD-NL'
+    elif(courier == 'GLS'):
+        return 'GLS'
+    else:
+        return None
 
 
 if __name__ == '__main__':
