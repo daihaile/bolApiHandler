@@ -11,10 +11,6 @@ def import_or_install(pandas):
     except ImportError:
         pip.main(['install', pandas])
 
-
-path = r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads\mijn_openstaande_bestellingen.xls"
-
-
 class ExcelHandler():
     def __init__(self) -> None:
         super().__init__()
@@ -67,43 +63,38 @@ class ExcelHandler():
         df = pd.read_excel(filename, index_col=None, na_values=['NA'])
         df.head()
 
-    def save_orders_to_excel(self, orders):
-        #df = pd.DataFrame.from_dict(orders['orders'])
-        orderDF = json_normalize(orders['orders'], record_path='orderItems', meta=[
-                                 'orderId', 'dateTimeOrderPlaced'], errors='ignore')
-
-        # check for file
-        if not os.path.isfile('test.xlsx'):
-            orderDF.to_excel('test.xlsx')
-        return orderDF
-
-    def save_orders_to_csv(self, orders):
-        #df = pd.DataFrame.from_dict(orders['orders'])
+    def save_orders_to_excel(self, orders,path):
+        file = os.path.join(path, 'orders.xlsx')
 
         orderDF = json_normalize(orders['orders'], record_path='orderItems', meta=[
                                  'orderId', 'dateTimeOrderPlaced'], errors='ignore')
 
         # check for file
-        if os.path.isfile('orders.csv'):
-            os.remove('orders.csv')
-        if not os.path.isfile('orders.csv'):
-            orderDF.to_csv('orders.csv', index=False)
+        if not os.path.isfile(file):
+            orderDF.to_excel(file)
         return orderDF
 
-    def filter_dataframe(self, df, courier=None, cor=None):
-        if courier is not "":
-            filtered_df = (df['Courier'] == courier)
-            print(filtered_df)
-            # return filtered_df
-        return df
+    def save_orders_to_csv(self, orders,path):
+        file = os.path.join(path, 'orders.csv')
 
-    def save_to_csv(self, data, name):
-        if os.path.isfile(name + '.csv'):
-            os.remove(name+'.csv')
-            data.to_csv(str(name) + '.csv', index=False)
-        if not os.path.isfile(str(name) + '.csv'):
+        orderDF = json_normalize(orders['orders'], record_path='orderItems', meta=[
+                                 'orderId', 'dateTimeOrderPlaced'], errors='ignore')
+
+        # check for file
+        if os.path.isfile(file):
+            os.remove(file)
+        if not os.path.isfile(file):
+            orderDF.to_csv(file, index=False)
+        return orderDF
+
+    def save_to_csv(self, data, name ,path):
+        file = os.path.join(path,name)
+        if os.path.isfile(file):
+            os.remove(file)
+            data.to_csv(file, index=False)
+        if not os.path.isfile(file):
             print("Saved file:" + name)
-            data.to_csv(str(name) + '.csv', index=False)
+            data.to_csv(file, index=False)
 
     def processTrackingCSV(self, data):
         return None

@@ -23,6 +23,7 @@ from backend.BolHandler import BolHandler
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads"
+app.config['DOWNLOAD_FOLDER'] = os.path.join(app.root_path, 'files')
 api = Api(app)
 
 logging.basicConfig(format='%(asctime)s %(message)s',
@@ -43,10 +44,18 @@ def test():
     #print(orders)
     #ordersDF = pd.DataFrame.from_dict(orders['orders'])
     #ordersDF.to_csv('rawOrders.csv')
-    #excelHandler.save_orders_to_csv(orders)
+    #excelHandler.save_orders_to_csv(orders,app.config['DOWNLOAD_FOLDER'])
     
     return render_template('index.html', message="UPLOAD 2 FILES")
 
+
+@app.route('/getMerged')
+def getMeged():
+    path = app.config['DOWNLOAD_FOLDER']
+    file = os.path.join(path,'merged.csv')
+    print(os.path.join(path,'merged.csv'))
+    
+    return send_file(file,as_attachment=True,attachment_filename='merged.csv')
 
 @app.route('/bol', methods=['GET', 'POST'])
 def get_from_bol():
@@ -61,7 +70,6 @@ def putBol():
     mergedDF = pd.read_csv(
         r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\merged.csv", dtype=str) 
     df = bolHandler.put_trackin_to_orderId(mergedDF)
-    
     return render_template('index.html', uploaded_tables=[mergedDF.to_html(classes='data')], uploaded_titles=mergedDF.columns.values, message='UPLOADED')
 
 @app.route('/uploader', methods=['GET', 'POST'])
@@ -91,7 +99,7 @@ def upload_files():
             
             # get orders from /orders/ for orderItemIds
             # ordersRaw = bolHandler.get_orders()
-            # orderItemIdDF = excelHandler.save_orders_to_csv(ordersRaw)
+            # orderItemIdDF = excelHandler.save_orders_to_csv(ordersRaw,app.config['DOWNLOAD_FOLDER'])
             # orders= orderItemIdDF
 
 
@@ -110,7 +118,7 @@ def upload_files():
             mergedDF= mergedDF.dropna()
             print("Merged Dataframe with countryCode")
             print(mergedDF)
-            excelHandler.save_to_csv(mergedDF, 'merged')
+            excelHandler.save_to_csv(mergedDF, 'merged.csv',app.config['DOWNLOAD_FOLDER'])
             return render_template('index.html', tables=[mergedDF.to_html(classes='data')], titles=mergedDF.columns.values, message='got csv')
             
         else:

@@ -28,7 +28,7 @@
 <body>
   <h1>file uploader for adding tracking numbers to bol.com</h1> <a href="/">HOME</a>
   <h2>{{ message }}</h2>
-  
+
 <div class="uploaded">
   {% for table in uploaded_tables %}
   {{uploaded_titles[loop.index]}}
@@ -59,7 +59,7 @@
     {{ table|safe }}
   {% endfor %}
 
-  <a href="/donwload/" target="blank"><button class='btn btn-default'>Download</button></a>
+  <a href="/getMerged" target="blank"><button class='btn btn-default'>Download</button></a>
 
   <a href="/put" target="blank"><button class='btn btn-default'>Upload tracking numbers</button></a>
 
