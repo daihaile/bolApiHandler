@@ -15,7 +15,7 @@
       background: rgb(236, 240, 204);
       }
       .file_upload{
-        border:black solid 2px;
+        border:white solid 2px;
         padding: 1em;
         margin-bottom: 1em;
       }
@@ -26,8 +26,9 @@
 
 
 <body>
-  <h1>file uploader for adding tracking numbers to bol.com</h1> <a href="/">HOME</a>
-  <h2>{{ message }}</h2>
+  <a href="/">HOME</a>
+  <h1>file uploader for adding tracking numbers to bol.com</h1> 
+  <h3>{{ message }}</h2>
 
 <div class="uploaded">
   {% for table in uploaded_tables %}
@@ -39,20 +40,15 @@
 {% endfor %}
 </div>
 
-  <form action="/bol" method="POST" enctype="multipart/form-data">
-    <p>https://api.bol.com/retailer - /orders/2453724160</p>
-    <input type="text" name="path">
-    <input type="submit">
-  </form>
-  <br> 
-
 
 <div class="file_upload">
   <form action="/uploader" method="POST" enctype="multipart/form-data">
-    <label for="trackingFile">CSV FILE WITH TRACKINGS</label><br><br>
+    <label for="trackingFile">tracking CSV file</label>
     <input type="file" name="trackingFile" accept=".csv" required/><br><br>
-    <label for="trackingFile">EXCEL FILE WITH ORDERS (mijn_openstaande_bestellingen)</label><br><br>
+    
+    <label for="trackingFile">orders Excel file</label>
     <input type="file" name="ordersFile" accept=".xls" required/><br><br>
+    
     <input type="submit" >
   </form>
 </div>
@@ -67,6 +63,14 @@
   <a href="/put" target="blank"><button class='btn btn-default'>Upload tracking numbers</button></a>
 
 
+  
+
+  <form action="/bol" method="POST" enctype="multipart/form-data">
+    <p>get request for checking orders, insert order ID</p>
+    <input type="text" name="path">
+    <input type="submit">
+  </form>
+  <br>
   {{ order }}
 
 

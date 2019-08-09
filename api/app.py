@@ -72,7 +72,7 @@ def getSHipped():
 @app.route('/bol', methods=['GET', 'POST'])
 def get_from_bol():
     path = request.form['path']
-    r = bolHandler.get_from_bol(path)
+    r = bolHandler.get_from_bol('/orders/' + path)
     r2 = json.dumps(r, sort_keys=False, indent=4, separators=(',', ': '))
     return render_template('index.html', order=r2)
 
