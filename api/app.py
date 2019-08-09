@@ -40,6 +40,7 @@ api.add_resource(Landing, '/landing',
 
 @app.route('/')
 def test():
+    bolHandler.get_bearer_token()
     print(bolHandler.BEARER_TOKEN)
     #orders = bolHandler.get_orders()
     # print(orders)

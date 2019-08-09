@@ -107,18 +107,6 @@ class BolHandler():
         r = requests.get(self.URL + path, headers=header)
         return r.json()
 
-    def get_order_by_id(self, id):
-        if(is_number(id)):
-            id = str(id)
-        url = self.URL + "/orders/" + str(id)
-        auth = "Bearer " + self.BEARER_TOKEN
-        header = {
-            'Accept': 'application/vnd.retailer.v3+json',
-            'Authorization': auth,
-            'Accept-Encoding': "gzip, deflate",
-            'Host': "api.bol.com",
-        }
-
         r = requests.get(url, headers=header)
         logging.info("Sending request ", r.headers)
         return r.json()
@@ -163,6 +151,7 @@ class BolHandler():
     def put_trackin_to_orderId(self,mergedDF):
         logging.info("[PUT] Adding transport information with")
         logging.info(mergedDF)
+        self.get_bearer_token()
         auth = "Bearer " + self.BEARER_TOKEN
         headers = {
             'Accept': "application/vnd.retailer.v3+json",
