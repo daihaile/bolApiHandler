@@ -173,7 +173,10 @@ class BolHandler():
             'Host': "api.bol.com",
             'Accept-Encoding': "gzip, deflate",
         }
-
+        mergedDF.loc[:,'sent'] = False
+        mergedDF.loc[:,'status'] = None
+        mergedDF.loc[:,'description'] = None
+        mergedDF.loc[:,'shipmentid'] = None
         for row in mergedDF.iterrows():
             print()
             print("Send trackingdata to orderId: "+ str(row[1]['orderId']))
@@ -183,31 +186,27 @@ class BolHandler():
                 "shipmentReference": "",
                 "transport": {
                     "transporterCode": row[1]['Courier'],
-                    "trackAndTrace": row[1]['track']
+                    "trackAndTrace": row[1]['Tracking Reference']
                 }
             }
             # PUT REQUEST ABSENDEN
             pp.pprint(data)
             logging.info("Send trackingdata to orderId: "+ str(row[1]['orderId']))
-            #r = requests.put(url, data=json.dumps(data),headers=headers)
-            #pp.pprint(r.text)
-            #logging.warning(r.text)
-            time.sleep(1)
-            print("Simulated put request to",url,"with",data)
+            r = requests.put(url, data=json.dumps(data),headers=headers)
+            pp.pprint(r.text)
+            logging.warning(r.text)
+            res = r.json()
+            mergedDF.at[row[0],['sent']] = True
+            mergedDF.at[row[0],['status']] = res.get('status')
+            mergedDF.at[row[0],['description']] = res.get('description')
+            #print(row)
+            #print("Simulated put request to",url,"with",data)
             print()
+            time.sleep(1)
+        
+        print(mergedDF)
         
         return mergedDF
-
-
-
-
-
-def is_number(s):
-    try:
-        float(s)
-        return True
-    except ValueError:
-        return False
 
 
 

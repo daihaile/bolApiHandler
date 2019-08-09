@@ -1,8 +1,10 @@
 from pandas.io.json import json_normalize
 import pandas as pd
+import numpy as np
 import json
 import os
 import pip
+from csv import Sniffer
 
 
 def import_or_install(pandas):
@@ -40,16 +42,26 @@ class ExcelHandler():
         return df
 
     def read_tracking_csv(self, filename):
-        u_cols = [3,4,5]
 
+        sep = ','
+
+        with open(filename,'r') as csvFile:
+            dialect = Sniffer().sniff(csvFile.read(30))
+            if dialect.delimiter == ';':
+                sep = ';'
+            elif dialect.delimiter ==',':
+                sep = ','
+
+        u_cols = [3,4,5]
         df = pd.read_csv(filename,
-                         sep='\,',
+                         sep=sep ,
                          header=None,
                          skiprows=1,
                          engine='python',
                          usecols=u_cols,
                          names=['orderId','Courier','Tracking Reference'],
-                         dtype=str)
+                         dtype={'orderId':str,'Tracking Reference':str}
+                         )
         
         df = df[df['orderId'].str.contains(r'^2[0-9]{1,9}$',na=False)]
         df = df[df['Courier'].str.startswith(('DPD','GLS'),na=False)]

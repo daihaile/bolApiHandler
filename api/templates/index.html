@@ -33,6 +33,9 @@
   {% for table in uploaded_tables %}
   {{uploaded_titles[loop.index]}}
   {{ table|safe }}
+
+  
+  <a href="/getShipped" target="blank"><button class='btn btn-default'>Download shipped csv</button></a>
 {% endfor %}
 </div>
 
