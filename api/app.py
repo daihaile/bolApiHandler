@@ -22,7 +22,7 @@ from backend.BolHandler import BolHandler
 
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\uploads"
+app.config['UPLOAD_FOLDER'] = os.path.join(app.root_path, 'uploads')
 app.config['DOWNLOAD_FOLDER'] = os.path.join(app.root_path, 'files')
 api = Api(app)
 

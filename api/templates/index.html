@@ -39,7 +39,7 @@
 {% endfor %}
 </div>
 
-  <form action="http://localhost:5000/bol" method="POST" enctype="multipart/form-data">
+  <form action="/bol" method="POST" enctype="multipart/form-data">
     <p>https://api.bol.com/retailer - /orders/2453724160</p>
     <input type="text" name="path">
     <input type="submit">
@@ -48,7 +48,7 @@
 
 
 <div class="file_upload">
-  <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+  <form action="/uploader" method="POST" enctype="multipart/form-data">
     <label for="trackingFile">CSV FILE WITH TRACKINGS</label><br><br>
     <input type="file" name="trackingFile" accept=".csv" required/><br><br>
     <label for="trackingFile">EXCEL FILE WITH ORDERS (mijn_openstaande_bestellingen)</label><br><br>
