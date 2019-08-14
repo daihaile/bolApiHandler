@@ -136,6 +136,7 @@ def upload_files():
 
             print("TrackingDF")
             print(trackDF)
+            logging.info(trackDF)
             print("Merged Dataframe with countryCode")
             print(mergedDF)
 
