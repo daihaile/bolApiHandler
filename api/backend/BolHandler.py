@@ -3,6 +3,7 @@ import logging
 import time
 import json
 import pprint as pp
+import datetime
 
 class BolHandler():
 
@@ -16,6 +17,7 @@ class BolHandler():
         self.URL = "https://api.bol.com/retailer"
         self.BEARER_TOKEN = self.get_bearer_token()
         self.BEARER_TOKEN_EXPIRES = None
+        self.tokenTime = datetime.datetime.now()
 
     def get_bearer_token(self):
         querystring = {"grant_type": "client_credentials"}
@@ -166,7 +168,19 @@ class BolHandler():
         mergedDF.loc[:,'status'] = None
         mergedDF.loc[:,'description'] = None
         mergedDF.loc[:,'shipmentid'] = None
+
+        
+        expireTime = self.tokenTime + datetime.timedelta(minutes = 4)
         for row in mergedDF.iterrows():
+            
+            currentTime=datetime.datetime.now()
+            diff = (expireTime-currentTime).total_seconds()
+            if(diff < 100):
+                self.BEARER_TOKEN = self.get_bearer_token()
+                expireTime = self.tokenTime + datetime.timedelta(minutes = 4)
+
+            
+
             print()
             print("Send trackingdata to orderId: "+ str(row[1]['orderId']))
             logging.info(row)
