@@ -1,1 +1,0 @@
-.\getIP.ps1; python -m flask run --host=$ipv4 --port=8080

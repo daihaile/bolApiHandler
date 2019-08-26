@@ -47,10 +47,16 @@ class ExcelHandler():
 
         with open(filename,'r') as csvFile:
             dialect = Sniffer().sniff(csvFile.read(30))
+            filedata = csvFile.read()
             if dialect.delimiter == ';':
                 sep = ';'
             elif dialect.delimiter ==',':
                 sep = ','
+
+        filedata = filedata.replace(";",",")
+
+        with open(filename, 'w') as csvFile:
+            csvFile.write(filedata)
 
         u_cols = [3,4,5]
         df = pd.read_csv(filename,
@@ -65,7 +71,7 @@ class ExcelHandler():
         
         df = df[df['orderId'].str.contains(r'^2[0-9]{1,9}$',na=False)]
         df = df[df['Courier'].str.startswith(('DPD','GLS'),na=False)]
-        df = df.replace(regex=r'(GLS Paket OVL Berlin|GLS Normalpaket)', value="GLS")
+        df = df.replace(regex=r'(GLS Paket OVL Berlin|GLS Normalpaket| GLS Paket Megaflex Guben)', value="GLS")
         df = df.replace(regex=r'DPD Predict', value="DPD")
         return df.dropna()
 
@@ -110,3 +116,9 @@ class ExcelHandler():
 
     def processTrackingCSV(self, data):
         return None
+
+e = ExcelHandler()
+print(os.path)
+df = e.read_tracking_csv(r"C:\Users\Mister Sandman\Downloads\MrSandman_Daily_Tracking_CSV.csv")
+e.save_to_csv(df,"TRACKING NEU.csv",r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\Test")
+print(df)
