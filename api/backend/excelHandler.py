@@ -116,9 +116,3 @@ class ExcelHandler():
 
     def processTrackingCSV(self, data):
         return None
-
-e = ExcelHandler()
-print(os.path)
-df = e.read_tracking_csv(r"C:\Users\Mister Sandman\Downloads\MrSandman_Daily_Tracking_CSV.csv")
-e.save_to_csv(df,"TRACKING NEU.csv",r"C:\Users\Mister Sandman\Desktop\Tasks\bolcom track\server\api\Test")
-print(df)
