@@ -42,11 +42,6 @@ api.add_resource(Landing, '/landing',
 def test():
     bolHandler.get_bearer_token()
     print(bolHandler.BEARER_TOKEN)
-    #orders = bolHandler.get_orders()
-    # print(orders)
-    #ordersDF = pd.DataFrame.from_dict(orders['orders'])
-    # ordersDF.to_csv('rawOrders.csv')
-    # excelHandler.save_orders_to_csv(orders,app.config['DOWNLOAD_FOLDER'])
 
     return render_template('index.html', message="UPLOAD 2 FILES")
 
@@ -68,6 +63,15 @@ def getSHipped():
     print(os.path.join(path, 'shipped.csv'))
 
     return send_file(file, as_attachment=True, attachment_filename='shipped.csv')
+
+@app.route('/getTracking')
+def getTracking():
+    path = app.config['DOWNLOAD_FOLDER']
+    file = os.path.join(path, 'tracking.csv')
+    print(os.path.join(path, 'tracking.csv'))
+
+    return send_file(file, as_attachment=True, attachment_filename='tracking.csv')
+
 
 
 @app.route('/bol', methods=['GET', 'POST'])
