@@ -71,7 +71,7 @@ class ExcelHandler():
         
         df = df[df['orderId'].str.contains(r'^2[0-9]{1,9}$',na=False)]
         df = df[df['Courier'].str.startswith(('DPD','GLS'),na=False)]
-        df = df.replace(regex=r'(GLS Paket OVL Berlin|GLS Normalpaket| GLS Paket Megaflex Guben)', value="GLS")
+        df = df.replace(regex=r'(GLS Paket OVL Berlin|GLS Normalpaket|GLS Paket Megaflex Guben)', value="GLS")
         df = df.replace(regex=r'DPD Predict', value="DPD")
         return df.dropna()
 
