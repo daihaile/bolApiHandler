@@ -70,8 +70,8 @@ class ExcelHandler():
                          )
         
         df = df[df['orderId'].str.contains(r'^2[0-9]{1,9}$',na=False)]
-        df = df[df['Courier'].str.startswith(('DPD','GLS'),na=False)]
-        df = df.replace(regex=r'(GLS Paket OVL Berlin|GLS Normalpaket|GLS Paket Megaflex Guben)', value="GLS")
+        df = df[df['Courier'].str.startswith(('DPD','GLS','\"GLS'),na=False)]
+        df = df.replace(regex=r'(GLS Paket OVL Berlin|GLS Normalpaket|GLS Paket Megaflex Guben|GLS letter box|GLS Paket bis 31,5kg DE )', value="GLS")
         df = df.replace(regex=r'DPD Predict', value="DPD")
         return df.dropna()
 
@@ -116,3 +116,8 @@ class ExcelHandler():
 
     def processTrackingCSV(self, data):
         return None
+
+if __name__ == "__main__":
+    e = ExcelHandler()
+    df = e.read_tracking_csv("C:\\Users\\Mister Sandman\\Desktop\MrSandman_Daily_Tracking_CSV.csv")
+    print(df)
