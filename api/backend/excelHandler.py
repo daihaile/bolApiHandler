@@ -45,20 +45,20 @@ class ExcelHandler():
 
         sep = ','
 
-        with open(filename,'r') as csvFile:
-            dialect = Sniffer().sniff(csvFile.read(30))
-            filedata = csvFile.read()
-            if dialect.delimiter == ';':
-                sep = ';'
-            elif dialect.delimiter ==',':
-                sep = ','
+        # with open(filename,'r',encoding='utf-8') as csvFile:
+        #     dialect = Sniffer().sniff(csvFile.read(30))
+        #     filedata = csvFile.read()
+        #     if dialect.delimiter == ';':
+        #         sep = ';'
+        #     elif dialect.delimiter ==',':
+        #         sep = ','
 
-        filedata = filedata.replace(";",",")
+        # filedata = filedata.replace(";",",")
 
-        with open(filename, 'w') as csvFile:
-            csvFile.write(filedata)
+        # with open(filename, 'w') as csvFile:
+        #     csvFile.write(filedata)
 
-        u_cols = [3,4,5]
+        u_cols = [4,6,7]
         df = pd.read_csv(filename,
                          sep=sep ,
                          header=None,
