@@ -7,12 +7,12 @@ import datetime
 
 class BolHandler():
 
-    # generated with postman,woops
-    auth = "Basic NTc2ODI0NzktN2RmYy00MWQxLWEwNWEtY2JlOWJjMmQ5MjcwOkFNS3NNd1VmclEtcGE0X1FtR0dwZnc4ZFEzQV8xT19vS21PbWJQaWxpZlI4NHBQeHgyY3pXTFR3TzFnRGJ1amI2em9OTkZ2SmxqNTRXaGRvT3NmQmZYSQ=="
+    
+    auth = "XXXX"
 
     def __init__(self):
         self.CLIENT_ID = "57682479-7dfc-41d1-a05a-cbe9bc2d9270"
-        self.CLIENT_SECRET = "AMKsMwUfrQ-pa4_QmGGpfw8dQ3A_1O_oKmOmbPilifR84pPxx2czWLTwO1gDbujb6zoNNFvJlj54WhdoOsfBfXI"
+        self.CLIENT_SECRET = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         self.BEARER_TOKEN_LOGIN = "https://login.bol.com/token"
         self.URL = "https://api.bol.com/retailer"
         self.BEARER_TOKEN = self.get_bearer_token()
@@ -23,7 +23,7 @@ class BolHandler():
         querystring = {"grant_type": "client_credentials"}
         headers = {
             'accept': "application/json",
-            'Authorization': "Basic NTc2ODI0NzktN2RmYy00MWQxLWEwNWEtY2JlOWJjMmQ5MjcwOkFNS3NNd1VmclEtcGE0X1FtR0dwZnc4ZFEzQV8xT19vS21PbWJQaWxpZlI4NHBQeHgyY3pXTFR3TzFnRGJ1amI2em9OTkZ2SmxqNTRXaGRvT3NmQmZYSQ==",
+            'Authorization': "XXXX",
             'Cache-Control': "no-cache",
             'Host': "login.bol.com",
             'Accept-Encoding': "gzip, deflate",
